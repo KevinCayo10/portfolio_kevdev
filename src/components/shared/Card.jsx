@@ -1,10 +1,15 @@
 import PropTypes from "prop-types";
 import ButtonG from "./Button";
+import { motion } from "framer-motion";
 
 function Card({ url_img, title, description, url_page, url_github, tools }) {
-  console.log("TOOLS _ ", tools);
   return (
-    <div className="border  rounded-md p-5 flex-1 ">
+    <motion.div
+      className="border  rounded-md p-5 flex-1 "
+      initial={{ opacity: 1, y: -25 }}
+      whileInView={{ opacity: 1, y: -5 }}
+      transition={{ duration: 5 }}
+    >
       <img src={url_img} alt="" width={200} className="w-full h-auto" />
       <h3 className="text-xl font-semibold mt-5">{title}</h3>
       <div>
@@ -29,7 +34,7 @@ function Card({ url_img, title, description, url_page, url_github, tools }) {
           label={"Github"}
         />
       </div>
-    </div>
+    </motion.div>
   );
 }
 

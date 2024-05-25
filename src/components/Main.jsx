@@ -11,9 +11,9 @@ function Banner() {
         <div className="container  text-center items-center px-4 pt-12 pb-12 sm:pt-20 flex flex-col sm:flex-row gap-6 sm:text-left sm:items-center">
           <motion.div
             className="w-2/3"
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 3 }}
+            initial={{ opacity: 0, y: 25 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1 }}
           >
             <h2 className="font-bold text-4xl">Hello, I´m Kevin Cayo</h2>
             <h2 className="font-bold text-2xl mt-1 gradiant-text sm:text-4xl ">
@@ -31,9 +31,9 @@ function Banner() {
           </motion.div>
           <motion.div
             className="relative w-1/3"
-            initial={{ opacity: 0, x: 50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 3 }}
+            initial={{ opacity: 0, x: 25 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1 }}
           >
             <img
               src={Portfile}

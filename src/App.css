@@ -4,16 +4,36 @@ body {
 }
 
 .gradiant-text {
-  background: linear-gradient(to top, #3b82f6, #06b6d4);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  @apply bg-gradient-to-t from-blue-500 to-cyan-500 text-transparent;
+  overflow: hidden;
+  border-right: 2px solid #fff;
+  animation: typing-text steps(40) 5s infinite, blink ease 0.5s infinite;
+  text-wrap: nowrap;
+  display: inline-block;
+  width: max-content;
+  width: 0;
 }
+
+/* Media query para pantallas de menos de 600px (celulares) */
+@media only screen and (max-width: 600px) {
+  @keyframes typing-text {
+    from {
+      width: 0%;
+    }
+    to {
+      width: 65%;
+    }
+  }
+}
+
+/* Definición de la animación typing-text */
 @keyframes typing-text {
   from {
     width: 0%;
   }
   to {
-    width: 350px;
+    width: 65%;
   }
 }
 
