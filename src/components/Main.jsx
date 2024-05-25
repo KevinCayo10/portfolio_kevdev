@@ -15,7 +15,9 @@ function Banner() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
           >
-            <h2 className="font-bold text-4xl">Hello, I´m Kevin Cayo</h2>
+            <h2 className="font-bold text-4xl dark:text-white">
+              Hello, I´m Kevin Cayo
+            </h2>
             <h2 className="font-bold text-2xl mt-1 gradiant-text sm:text-4xl ">
               Software Engineer
             </h2>
@@ -25,7 +27,7 @@ function Banner() {
               and a passion for the field.
             </p>
             <ButtonG
-              className="px-8 shadow-gray-500 shadow-md py-3 mt-5 border rounded-full hover:border-blue-500"
+              className="px-8 shadow-gray-500 shadow-md py-3 mt-5 border rounded-full hover:border-blue-500 dark:text-white"
               label="Download CV"
             />
           </motion.div>

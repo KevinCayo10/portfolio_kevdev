@@ -35,7 +35,7 @@ function Footer() {
     },
   ];
   return (
-    <div className="container mx-auto px-4 ">
+    <div className="container mx-auto px-4 dark:text-white">
       <div className="pt-20 pb-8 mt-20 border-t-2 ">
         {/* Footer social links */}
         <div className="flex flex-col justify-center items-center mb-10 sm:mb-20">

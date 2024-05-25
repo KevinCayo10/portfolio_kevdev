@@ -11,7 +11,7 @@ function Contact() {
           duration: 0.5,
         }}
       >
-        <div className="container mx-auto flex flex-col-reverse py-5 ">
+        <div className="container mx-auto flex flex-col-reverse py-5 dark:text-white">
           <div className="w-full lg:w-full ">
             <div className="leading-loose ">
               <h2 className="text-2xl font-semibold px-4 text-center">
@@ -66,7 +66,8 @@ function Contact() {
                   />
                   <div className="mt-6">
                     <textarea
-                      className="w-full px-5 py-2 border border-gray-500 rounded-md  bg-gray-400 shadow-sm text-md text-black placeholder-gray-700"
+                      className="w-full px-5 py-2 border border-gray-500 rounded-md  
+                      border-opacity-50 dark:bg-gray-400 shadow-sm text-md text-black placeholder-gray-700"
                       name="message"
                       id="message"
                       cols="14"
@@ -75,7 +76,7 @@ function Contact() {
                       placeholder="Message"
                     ></textarea>
                   </div>
-                  <div className="flex flex-1 justify-center items-end">
+                  <div className="flex flex-1 justify-center items-end pb-4">
                     <button
                       type="submit"
                       className="w-1/4 px-4 py-2 mt-6 font-semibold text-white transition-colors duration-300 transform bg-blue-500 rounded-full hover:bg-blue-400 focus:outline-none focus:bg-blue-400"

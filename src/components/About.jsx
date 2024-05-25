@@ -1,15 +1,15 @@
 function About() {
   return (
     <section id="aboutme">
-      <div className="container m-auto px-4 py-6 max-w-4xl text-center">
+      <div className="container m-auto px-4 py-6 max-w-4xl text-center dark:text-white">
         <h2 className="font-bold text-2xl">About me</h2>
         <p className="text-gray-400 mt-4">
           Here you will find more information about me, what I do and my current
           skills mainly in terms of programming and technology.
         </p>
         {/* Profile */}
-        <div className="mt-5 flex gap-10">
-          <div className="w-1/2 flex flex-col  ">
+        <div className="mt-5 flex flex-col gap-10 sm:flex-row">
+          <div className="w-full flex flex-col sm:w-1/2 ">
             <h3 className="text-xl font-medium text-left">¡Get to know me!</h3>
             <div className="text-left">
               <p className="text-base font-light mt-2 text-justify">
@@ -35,7 +35,7 @@ function About() {
             </a>
           </div>
           {/* Skills */}
-          <div className="w-1/2 flex flex-col">
+          <div className="w-full flex flex-col sm:w-1/2">
             <h3 className="text-xl font-medium text-left">Skills</h3>
             <div>
               <p className="text-base font-light mt-2 text-justify">
