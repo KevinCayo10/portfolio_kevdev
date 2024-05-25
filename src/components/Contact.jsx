@@ -1,4 +1,4 @@
-import FormInput from "./FormInput";
+import FormInput from "./shared/FormInput";
 import { motion } from "framer-motion";
 
 function Contact() {
@@ -17,7 +17,9 @@ function Contact() {
         <div className="container mx-auto flex flex-col-reverse py-5 ">
           <div className="w-full lg:w-full ">
             <div className="leading-loose ">
-              <h2 className="text-2xl font-semibold px-4">Contact me</h2>
+              <h2 className="text-2xl font-semibold px-4 text-center">
+                Contact me
+              </h2>
               <form
                 onSubmit={(e) => {
                   e.preventDefault();

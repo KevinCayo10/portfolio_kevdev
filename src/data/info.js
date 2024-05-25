@@ -7,6 +7,7 @@ export const Projects = [
     url_img: "http://localhost:5173/public/images/project2.png",
     url_page: "https://kevdevportfolio.netlify.app/",
     url_github: "",
+    tools: ["ReactJS", "MySQL", "NodeJS"],
   },
   {
     id: 2,
@@ -16,6 +17,7 @@ export const Projects = [
     url_img: "http://localhost:5173/public/images/project2.png",
     url_page: "https://kevdevportfolio.netlify.app/",
     url_github: "",
+    tools: ["ReactJS", "MySQL", "NodeJS"],
   },
   {
     id: 3,
@@ -25,6 +27,7 @@ export const Projects = [
     url_img: "http://localhost:5173/public/images/project2.png",
     url_page: "https://kevdevportfolio.netlify.app/",
     url_github: "",
+    tools: ["ReactJS", "MySQL", "NodeJS"],
   },
   {
     id: 4,
@@ -34,6 +37,7 @@ export const Projects = [
     url_img: "http://localhost:5173/public/images/project2.png",
     url_page: "https://kevdevportfolio.netlify.app/",
     url_github: "",
+    tools: ["ReactJS", "MySQL", "NodeJS"],
   },
 ];
 

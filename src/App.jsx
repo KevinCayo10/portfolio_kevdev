@@ -6,6 +6,7 @@ import Project from "./components/Project";
 import ArrowDown from "./assets/images/arrow-down.svg";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import About from "./components/About";
 
 function App() {
   const [scrolling, setScrolling] = useState(false);
@@ -29,6 +30,7 @@ function App() {
     <div id="top" className="max-w-4xl m-auto relative">
       <Header />
       <Main />
+      <About />
       <Project />
       <Contact />
       <Footer />
