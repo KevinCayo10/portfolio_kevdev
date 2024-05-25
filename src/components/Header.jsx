@@ -46,7 +46,7 @@ export default function Header() {
                     <a
                       href={option.url}
                       onClick={(e) => handleSmoothScroll(e, targetId)}
-                      className="text-gray-600  dark:hover:text-white cursor-pointer hover:text-gray-800"
+                      className="text-gray-600  dark:hover:text-white cursor-pointer hover:text-gray-800 text-sm sm:text-base"
                     >
                       {option.title}
                     </a>
