@@ -1,0 +1,28 @@
+body {
+  background-color: #000;
+  color: #fff;
+}
+
+.gradiant-text {
+  background: linear-gradient(to top, #3b82f6, #06b6d4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@keyframes typing-text {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 350px;
+  }
+}
+
+@keyframes typing-text {
+  to {
+    border-color: transparent;
+  }
+}
+
+.leading-loose {
+  line-height: 2;
+}
