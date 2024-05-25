@@ -75,6 +75,14 @@ function Contact() {
                       placeholder="Message"
                     ></textarea>
                   </div>
+                  <div className="flex flex-1 justify-center items-end">
+                    <button
+                      type="submit"
+                      className="w-1/4 px-4 py-2 mt-6 font-semibold text-white transition-colors duration-300 transform bg-blue-500 rounded-full hover:bg-blue-400 focus:outline-none focus:bg-blue-400"
+                    >
+                      Send message
+                    </button>
+                  </div>
                 </div>
               </form>
             </div>
