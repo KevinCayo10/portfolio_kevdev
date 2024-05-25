@@ -18,11 +18,13 @@ export default function Header() {
           <div>
             <ul className="flex gap-4">
               {Menu.map((option) => {
+                const targetId = option.url.substring(1);
+
                 return (
                   <li key={option.id}>
                     <a
                       href={option.url}
-                      onClick={(e) => handleSmoothScroll(e, "projects")}
+                      onClick={(e) => handleSmoothScroll(e, targetId)}
                       className="text-gray-400 hover:text-white cursor-pointer"
                     >
                       {option.title}

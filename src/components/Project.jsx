@@ -12,6 +12,10 @@ function Project() {
           transition={{ duration: 2 }}
         >
           <h2 className="text-2xl font-semibold">Projects</h2>
+          <p className="text-base font-light">
+            Explore a showcase of projects I´ve worked on. From web applications
+            to software solutions
+          </p>
         </motion.div>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 mt-11">
           {Projects.map((project) => {

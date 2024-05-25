@@ -5,9 +5,9 @@ import ButtonG from "./shared/Button";
 
 function Banner() {
   return (
-    <main className="relative mt-20 sm:mt-25">
+    <main className="relative mt-20 sm:mt-25" id="top">
       {/* Intro/Banner section */}
-      <section id="home">
+      <section>
         <div className="container  text-center items-center px-4 pt-12 pb-12 sm:pt-20 flex flex-col sm:flex-row gap-6 sm:text-left sm:items-center">
           <motion.div
             className="w-2/3"

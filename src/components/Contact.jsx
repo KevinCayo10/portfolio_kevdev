@@ -17,6 +17,12 @@ function Contact() {
               <h2 className="text-2xl font-semibold px-4 text-center">
                 Contact me
               </h2>
+              <p className="text-base font-light text-center px-4">
+                Get in touch! Whether it´s for inquiries, collaborations, or
+                just a tech chat, I´m here. Developers, clients, or fellow tech
+                enthusiasts, I´m open to new connections and opportunities.
+                Let´s connect!
+              </p>
               <form
                 onSubmit={(e) => {
                   e.preventDefault();
@@ -64,7 +70,7 @@ function Contact() {
                       name="message"
                       id="message"
                       cols="14"
-                      rows="6"
+                      rows="3"
                       aria-label="Message"
                       placeholder="Message"
                     ></textarea>
