@@ -27,26 +27,28 @@ function App() {
   }, []);
 
   return (
-    <div id="top" className="max-w-4xl m-auto relative">
+    <div className="max-w-4xl m-auto relative">
       <Header />
       <Main />
       <About />
       <Project />
       <Contact />
       <Footer />
-      {scrolling && (
-        <button
-          className="fixed block right-8 bottom-8 w-24 p-2  rounded-full shadow-lg"
-          onClick={(e) => {
-            e.preventDefault();
-            document.getElementById("top").scrollIntoView({
-              behavior: "smooth",
-            });
-          }}
-        >
-          <img src={ArrowDown} alt="Scroll to top" />
-        </button>
-      )}
+      <div id="scrollToTopContainer" className="fixed bottom-8 right-8">
+        {scrolling && (
+          <button
+            className="w-24 p-2 rounded-full shadow-lg"
+            onClick={(e) => {
+              e.preventDefault();
+              document.getElementById("top").scrollIntoView({
+                behavior: "smooth",
+              });
+            }}
+          >
+            <img src={ArrowDown} alt="Scroll to top" />
+          </button>
+        )}
+      </div>
     </div>
   );
 }

@@ -4,17 +4,10 @@ body {
 }
 
 .gradiant-text {
+  background: linear-gradient(to top, #3b82f6, #06b6d4);
   -webkit-background-clip: text;
-  @apply bg-gradient-to-t from-blue-500 to-cyan-500 text-transparent;
-  overflow: hidden;
-  border-right: 2px solid #fff;
-  animation: typing-text steps(40) 5s infinite, blink ease 0.5s infinite;
-  text-wrap: nowrap;
-  display: inline-block;
-  width: max-content;
-  width: 0;
+  -webkit-text-fill-color: transparent;
 }
-
 @keyframes typing-text {
   from {
     width: 0%;

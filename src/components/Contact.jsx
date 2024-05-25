@@ -7,11 +7,8 @@ function Contact() {
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        whileInView={{ opacity: 0.9, x: 0 }}
         transition={{
-          ease: "easeInOut",
           duration: 0.5,
-          delay: 0.1,
         }}
       >
         <div className="container mx-auto flex flex-col-reverse py-5 ">
