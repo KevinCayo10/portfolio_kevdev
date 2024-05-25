@@ -1,10 +1,11 @@
+import project1 from "../assets/images/project1.png";
 export const Projects = [
   {
     id: 1,
     title: "KevDev Portfolio ",
     description:
       "This portfolio is created with React.js, Framer Motio, Vite and Tailwindcss",
-    url_img: "http://localhost:5173/public/images/project2.png",
+    url_img: project1,
     url_page: "https://kevdevportfolio.netlify.app/",
     url_github: "",
     tools: ["ReactJS", "MySQL", "NodeJS"],
@@ -14,7 +15,8 @@ export const Projects = [
     title: "KevDev Portfolio ",
     description:
       "This portfolio is created with React.js, Framer Motio, Vite and Tailwindcss",
-    url_img: "http://localhost:5173/public/images/project2.png",
+    url_img: project1,
+
     url_page: "https://kevdevportfolio.netlify.app/",
     url_github: "",
     tools: ["ReactJS", "MySQL", "NodeJS"],
@@ -24,7 +26,8 @@ export const Projects = [
     title: "KevDev Portfolio ",
     description:
       "This portfolio is created with React.js, Framer Motio, Vite and Tailwindcss",
-    url_img: "http://localhost:5173/public/images/project2.png",
+    url_img: project1,
+
     url_page: "https://kevdevportfolio.netlify.app/",
     url_github: "",
     tools: ["ReactJS", "MySQL", "NodeJS"],
@@ -34,7 +37,8 @@ export const Projects = [
     title: "KevDev Portfolio ",
     description:
       "This portfolio is created with React.js, Framer Motio, Vite and Tailwindcss",
-    url_img: "http://localhost:5173/public/images/project2.png",
+    url_img: project1,
+
     url_page: "https://kevdevportfolio.netlify.app/",
     url_github: "",
     tools: ["ReactJS", "MySQL", "NodeJS"],
