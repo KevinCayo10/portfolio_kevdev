@@ -1,5 +1,5 @@
 import project1 from "../assets/images/project1.png";
-import { FiGithub, FiTwitter, FiLinkedin, FiGlobe } from "react-icons/fi";
+import { FiGithub, FiTwitter, FiLinkedin } from "react-icons/fi";
 export const Projects = [
   {
     id: 1,
@@ -55,17 +55,17 @@ export const socialLinks = [
   {
     id: 2,
     icon: FiGithub,
-    url: "https://github.com/realstoman",
+    url: "https://github.com/KevinCayo10",
   },
   {
     id: 3,
     icon: FiTwitter,
-    url: "https://twitter.com/realstoman",
+    url: "#",
   },
   {
     id: 4,
     icon: FiLinkedin,
-    url: "https://www.linkedin.com/in/realstoman",
+    url: "www.linkedin.com/in/kevincayo10",
   },
 ];
 
