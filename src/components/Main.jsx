@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import Portfile from "../assets/images/perfil.png";
 import PortfileBag from "../assets/images/fondo1.png";
 import ButtonG from "./shared/Button";
+import { socialLinks } from "../data/info";
 
 function Banner() {
   return (
@@ -26,6 +27,25 @@ function Banner() {
               development skills with a collaborative, communicative approach
               and a passion for the field.
             </p>
+            <div className="flex flex-row gap-5  justify-center items-center sm:justify-start mt-5">
+              {socialLinks.map((link) => {
+                return (
+                  <a
+                    href={link.url}
+                    target="__blank"
+                    key={link.id}
+                    className="text-gray-400 cursor-pointer  rounded-lg bg-gray-300 p-2 duration-300
+                  hover:text-blue-500
+                  hover:bg-gray-300
+                  "
+                  >
+                    <i className="text-base sm:text-xl md:text-xl">
+                      <link.icon />
+                    </i>
+                  </a>
+                );
+              })}
+            </div>
             <ButtonG
               className="px-8 shadow-gray-500 shadow-md py-3 mt-5 border rounded-full hover:border-blue-500 dark:text-white"
               label="Download CV"

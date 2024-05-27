@@ -1,39 +1,40 @@
-import {
-  FiGithub,
-  FiTwitter,
-  FiLinkedin,
-  FiGlobe,
-  FiYoutube,
-} from "react-icons/fi";
+// import {
+//   FiGithub,
+//   FiTwitter,
+//   FiLinkedin,
+//   FiGlobe,
+//   FiYoutube,
+// } from "react-icons/fi";
+import { socialLinks } from "../data/info";
 import FooterCopyright from "./FooterCopyright";
 function Footer() {
-  const socialLinks = [
-    {
-      id: 1,
-      icon: <FiGlobe />,
-      url: "https://www.stoman.me/",
-    },
-    {
-      id: 2,
-      icon: <FiGithub />,
-      url: "https://github.com/realstoman",
-    },
-    {
-      id: 3,
-      icon: <FiTwitter />,
-      url: "https://twitter.com/realstoman",
-    },
-    {
-      id: 4,
-      icon: <FiLinkedin />,
-      url: "https://www.linkedin.com/in/realstoman",
-    },
-    {
-      id: 5,
-      icon: <FiYoutube />,
-      url: "https://www.youtube.com/c/realstoman",
-    },
-  ];
+  // const socialLinks = [
+  //   {
+  //     id: 1,
+  //     icon: <FiGlobe />,
+  //     url: "https://www.stoman.me/",
+  //   },
+  //   {
+  //     id: 2,
+  //     icon: <FiGithub />,
+  //     url: "https://github.com/realstoman",
+  //   },
+  //   {
+  //     id: 3,
+  //     icon: <FiTwitter />,
+  //     url: "https://twitter.com/realstoman",
+  //   },
+  //   {
+  //     id: 4,
+  //     icon: <FiLinkedin />,
+  //     url: "https://www.linkedin.com/in/realstoman",
+  //   },
+  //   {
+  //     id: 5,
+  //     icon: <FiYoutube />,
+  //     url: "https://www.youtube.com/c/realstoman",
+  //   },
+  // ];
   return (
     <div className="container mx-auto px-4 dark:text-white">
       <div className="pt-20 pb-8 mt-20 border-t-2 ">
@@ -51,7 +52,9 @@ function Footer() {
                   hover:text-blue-500
                   hover:bg-gray-300"
                 >
-                  <i className="text-xl sm:text-2xl md:text-3xl">{link.icon}</i>
+                  <i className="text-xl sm:text-2xl md:text-3xl">
+                    <link.icon />
+                  </i>
                 </a>
               );
             })}
