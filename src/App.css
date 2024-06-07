@@ -46,3 +46,14 @@ body {
 .leading-loose {
   line-height: 2;
 }
+
+/* Custom class for hover effect */
+.bg-gradient-hover {
+  background-size: 200% 200%;
+  background-position: left;
+  transition: background-position 0.5s ease-in-out;
+}
+
+.bg-gradient-hover:hover {
+  background-position: right;
+}
