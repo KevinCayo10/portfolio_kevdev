@@ -1,9 +1,11 @@
+import { FaArrowRight, FaDownload } from "react-icons/fa";
+
 function About() {
   return (
     <section id="aboutme">
       <div className="container m-auto px-4 py-6 max-w-4xl text-center dark:text-white">
         <h2 className="font-bold text-2xl">About me</h2>
-        <p className="text-gray-400 mt-4">
+        <p className="text-gray-700 mt-4 text-base">
           Here you will find more information about me, what I do and my current
           skills mainly in terms of programming and technology.
         </p>
@@ -12,13 +14,13 @@ function About() {
           <div className="w-full flex flex-col sm:w-1/2 ">
             <h3 className="text-xl font-medium text-left">¡Get to know me!</h3>
             <div className="text-left">
-              <p className="text-base font-light mt-2 text-justify">
+              <p className="text-base font-light mt-2 ">
                 I am a passionate backend developer with experience in building
                 and managing the logic and functionality behind websites and web
                 applications. My focus is on creation of robust and efficient
                 systems that drive the overall success of the product.
               </p>
-              <p className="text-base font-light mt-2 text-justify">
+              <p className="text-base font-light mt-2 ">
                 In addition to my experience in backend development, I have a
                 great interest in learning and applying DevOps practices,
                 especially in continuous integration (CI) and continuous
@@ -27,11 +29,13 @@ function About() {
                 life cycle.
               </p>
             </div>
-            <a
-              className=" text-sm w-1/2 py-3 bg-gradient-to-t from-blue-500 rounded-full to-cyan-500 hover:from-blue-700 hover:to-cyan-700 px-5 mt-4"
-              href="#contactme"
-            >
-              Contact me
+            <a href="#contactme" className="flex justify-start">
+              <button className="text-sm py-3  bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full bg-gradient-hover px-5  mt-4 ">
+                <span className="flex justify-around gap-2 items-center text-black ">
+                  <FaArrowRight className="" />
+                  Contact me
+                </span>
+              </button>
             </a>
           </div>
           {/* Skills */}

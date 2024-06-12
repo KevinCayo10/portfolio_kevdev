@@ -1,3 +1,4 @@
+import { FaArrowRight } from "react-icons/fa";
 import FormInput from "./shared/FormInput";
 import { motion } from "framer-motion";
 
@@ -67,7 +68,7 @@ function Contact() {
                   <div className="mt-6">
                     <textarea
                       className="w-full px-5 py-2 border border-gray-500 rounded-md  
-                      border-opacity-50 dark:bg-gray-400 shadow-sm text-md text-black placeholder-gray-700"
+                      border-opacity-50 dark:bg-transparent shadow-sm text-md dark:text-white text-black placeholder-gray-700"
                       name="message"
                       id="message"
                       cols="14"
@@ -79,9 +80,12 @@ function Contact() {
                   <div className="flex flex-1 justify-center items-end pb-4">
                     <button
                       type="submit"
-                      className="w-1/2 sm:w-1/4 px-4 py-2 mt-6 font-semibold text-white transition-colors duration-300 transform bg-blue-500 rounded-full hover:bg-blue-400 focus:outline-none focus:bg-blue-400"
+                      className="text-sm py-3  bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full bg-gradient-hover px-5  mt-4 dark:text-black"
                     >
-                      Send message
+                      <span className="flex justify-around gap-2 items-center text-black ">
+                        <FaArrowRight className="" />
+                        Contact me
+                      </span>
                     </button>
                   </div>
                 </div>

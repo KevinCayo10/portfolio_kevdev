@@ -8,38 +8,37 @@ body {
   @apply bg-gradient-to-t from-blue-500 to-cyan-500 text-transparent;
   overflow: hidden;
   border-right: 2px solid #fff;
-  animation: typing-text steps(40) 5s infinite, blink ease 0.5s infinite;
+  animation: typing-text-large steps(40) 5s infinite, blink ease 0.5s infinite;
   text-wrap: nowrap;
   display: inline-block;
   width: max-content;
   width: 0;
 }
 
-/* Media query para pantallas de menos de 600px (celulares) */
-@media only screen and (max-width: 600px) {
-  @keyframes typing-text {
-    from {
-      width: 0%;
-    }
-    to {
-      width: 100%;
-    }
-  }
-}
-
-/* Definición de la animación typing-text */
-@keyframes typing-text {
+/* Definición de la animación typing-text para pantallas grandes */
+@keyframes typing-text-large {
   from {
     width: 0%;
   }
   to {
-    width: 100%;
+    width: 325px;
   }
 }
 
-@keyframes typing-text {
+/* Definición de la animación typing-text para pantallas pequeñas */
+@keyframes typing-text-small {
+  from {
+    width: 0%;
+  }
   to {
-    border-color: transparent;
+    width: 230px;
+  }
+}
+
+/* Media query para pantallas de menos de 600px (celulares) */
+@media only screen and (max-width: 600px) {
+  .gradiant-text {
+    animation: typing-text-small steps(40) 5s infinite, blink ease 0.5s infinite;
   }
 }
 

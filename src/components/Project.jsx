@@ -11,8 +11,8 @@ function Project() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 2 }}
         >
-          <h2 className="text-2xl font-semibold">Projects</h2>
-          <p className="text-base font-light">
+          <h2 className="text-2xl font-bold">Projects</h2>
+          <p className="text-gray-700 mt-4 text-base">
             Explore a showcase of projects I´ve worked on. From web applications
             to software solutions
           </p>

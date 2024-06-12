@@ -1,43 +1,56 @@
 import { motion } from "framer-motion";
 import Portfile from "../assets/images/perfil.png";
-import PortfileBag from "../assets/images/fondo1.png";
-import ButtonG from "./shared/Button";
 import { socialLinks } from "../data/info";
+import { FaDownload } from "react-icons/fa";
+import { FaMouse } from "react-icons/fa"; // Importa el icono de mouse
 
 function Banner() {
+  const handleSmoothScroll = (e, targetId) => {
+    e.preventDefault();
+    const targetElement = document.getElementById(targetId);
+    const yOffset = -125; // Ajusta este valor según sea necesario
+    const yPosition =
+      targetElement.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+    window.scrollTo({
+      top: yPosition,
+      behavior: "smooth",
+    });
+  };
+
   return (
-    <main className="relative mt-20 sm:mt-25" id="top">
+    <main
+      className="relative mt-20 flex flex-col justify-center items-center sm:h-screen sm:m-auto"
+      id="top"
+    >
       {/* Intro/Banner section */}
-      <section>
-        <div className="container  text-center items-center px-4 pt-12 pb-12 sm:pt-20 flex flex-col sm:flex-row gap-6 sm:text-left sm:items-center">
+      <section className="w-full">
+        <div className="container mx-auto text-center items-center px-4 pt-12 pb-12 sm:pt-20 flex flex-col sm:flex-row gap-6 sm:text-left sm:items-center">
           <motion.div
-            className="w-2/3"
+            className="sm:w-2/3"
             initial={{ opacity: 0, y: 25 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
           >
-            <h2 className="font-bold text-4xl dark:text-white">
+            <h2 className="font-bold text-3xl dark:text-white sm:text-4xl">
               Hello, I´m Kevin Cayo
             </h2>
-            <h2 className="font-bold text-2xl mt-1 gradiant-text sm:text-4xl ">
+            <h2 className="font-bold text-2xl mt-1 gradiant-text sm:text-4xl">
               Software Engineer
             </h2>
-            <p className="mt-4 text-gray-400">
+            <p className="mt-4 text-gray-600">
               Specialized in Backend development, seeking to apply my
               development skills with a collaborative, communicative approach
               and a passion for the field.
             </p>
-            <div className="flex flex-row gap-5  justify-center items-center sm:justify-start mt-5">
+            <div className="flex flex-row gap-5 justify-center sm:justify-start mt-5">
               {socialLinks.map((link) => {
                 return (
                   <a
                     href={link.url}
                     target="__blank"
                     key={link.id}
-                    className="text-gray-400 cursor-pointer  rounded-lg bg-gray-300 p-2 duration-300
-                  hover:text-blue-500
-                  hover:bg-gray-300
-                  "
+                    className="text-gray-400 cursor-pointer rounded-lg bg-gray-300 p-2 duration-300 hover:text-blue-500 dark:text-gray-500 dark:hover:text-blue-500"
                   >
                     <i className="text-base sm:text-xl md:text-xl">
                       <link.icon />
@@ -46,32 +59,37 @@ function Banner() {
                 );
               })}
             </div>
-            <ButtonG
-              className="px-8 shadow-gray-500 shadow-md py-3 mt-5 border rounded-full hover:border-blue-500 dark:text-white"
-              label="Download CV"
-            />
+            <button className="text-sm py-3 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full bg-gradient-hover px-5 mt-4 font-bold">
+              <span className="flex justify-around gap-2 items-center text-black">
+                <FaDownload className="" />
+                Download CV
+              </span>
+            </button>
           </motion.div>
           <motion.div
-            className="relative w-1/3"
+            className=" w-full sm:w-1/3  "
             initial={{ opacity: 0, x: 25 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1 }}
           >
             <img
               src={Portfile}
-              alt=""
-              width={400}
-              className="relative z-10 w-auto m-auto"
-            />
-            <img
-              src={PortfileBag}
-              alt=""
-              className="absolute top-10 left-0 z-0"
-              width={600}
+              alt="Profile"
+              className=" w-2/3 sm:w-full md:w-auto m-auto"
             />
           </motion.div>
         </div>
       </section>
+      {/* Mouse Icon */}
+      <a
+        href="#aboutme"
+        className=" transform -translate-x-1/2  "
+        onClick={(e) => {
+          handleSmoothScroll(e, "aboutme");
+        }}
+      >
+        <FaMouse className="text-gray-400 text-3xl animate-bounce" />
+      </a>
     </main>
   );
 }

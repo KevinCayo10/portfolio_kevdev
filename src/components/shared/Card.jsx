@@ -1,6 +1,7 @@
 import PropTypes from "prop-types";
 import ButtonG from "./Button";
 import { motion } from "framer-motion";
+import { FaDownload, FaGit, FaGithub, FaLink } from "react-icons/fa";
 
 function Card({ url_img, title, description, url_page, url_github, tools }) {
   return (
@@ -21,10 +22,20 @@ function Card({ url_img, title, description, url_page, url_github, tools }) {
           );
         })}
       </div>
-      <p className="text-gray-400">{description}</p>
+      <p className="text-gray-600">{description}</p>
       <div className="flex  mt-12 gap-1 ">
-        <ButtonG version="live" url={url_page} label={"Live preview"} />
-        <ButtonG version="code" url={url_github} label={"Github"} />
+        <ButtonG
+          version="live"
+          url={url_page}
+          label={"Live preview"}
+          iconName={<FaLink></FaLink>}
+        />
+        <ButtonG
+          version="code"
+          url={url_github}
+          label={"Github"}
+          iconName={<FaGithub></FaGithub>}
+        />
       </div>
     </motion.div>
   );

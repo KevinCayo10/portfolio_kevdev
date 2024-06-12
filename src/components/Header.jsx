@@ -5,7 +5,13 @@ import { FaSun, FaMoon } from "react-icons/fa";
 export default function Header() {
   const handleSmoothScroll = (e, targetId) => {
     e.preventDefault();
-    document.getElementById(targetId).scrollIntoView({
+    const targetElement = document.getElementById(targetId);
+    const yOffset = -100; // Ajusta este valor según sea necesario
+    const yPosition =
+      targetElement.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+    window.scrollTo({
+      top: yPosition,
       behavior: "smooth",
     });
   };
@@ -40,7 +46,7 @@ export default function Header() {
             <ul className="flex gap-4 items-center">
               {Menu.map((option) => {
                 const targetId = option.url.substring(1);
-
+                console.log("TargetId : ", targetId);
                 return (
                   <li key={option.id}>
                     <a
