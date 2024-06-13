@@ -1,8 +1,33 @@
 import { FaArrowRight } from "react-icons/fa";
 import FormInput from "./shared/FormInput";
 import { motion } from "framer-motion";
+import emailjs from "@emailjs/browser";
+import { useRef } from "react";
 
 function Contact() {
+  const form = useRef();
+  console.log(import.meta.env);
+  const sendEmail = (e) => {
+    e.preventDefault();
+    emailjs
+      .sendForm(
+        import.meta.env.VITE_REACT_APP_SERVICE_ID,
+        import.meta.env.env.VITE_REACT_APP_TEMPLATE_ID,
+        form.current,
+        {
+          publicKey: import.meta.env.VITE_REACT_APP_PUBLIC_KEY,
+        }
+      )
+      .then(
+        () => {
+          console.log("SUCCESS!");
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+        }
+      );
+  };
+
   return (
     <section id="contactme">
       <motion.div
@@ -25,10 +50,8 @@ function Contact() {
                 Let´s connect!
               </p>
               <form
-                onSubmit={(e) => {
-                  e.preventDefault();
-                  alert("Form submitted");
-                }}
+                ref={form}
+                onSubmit={sendEmail}
                 className="container m-auto px-4 rounded-xl shadow-xl text-left "
               >
                 <div className="mt-5">

@@ -3,7 +3,7 @@ import Portfile from "../assets/images/perfil.png";
 import { socialLinks } from "../data/info";
 import { FaDownload } from "react-icons/fa";
 import { FaMouse } from "react-icons/fa"; // Importa el icono de mouse
-
+import cv from "../assets/cv.pdf";
 function Banner() {
   const handleSmoothScroll = (e, targetId) => {
     e.preventDefault();
@@ -20,7 +20,7 @@ function Banner() {
 
   return (
     <main
-      className="relative mt-20 flex flex-col justify-center items-center sm:h-screen sm:m-auto"
+      className="relative mt-20 flex flex-col justify-center items-center sm:h-screen sm:m-auto "
       id="top"
     >
       {/* Intro/Banner section */}
@@ -59,11 +59,17 @@ function Banner() {
                 );
               })}
             </div>
+
             <button className="text-sm py-3 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full bg-gradient-hover px-5 mt-4 font-bold">
-              <span className="flex justify-around gap-2 items-center text-black">
+              <a
+                className="flex justify-around gap-2 items-center text-black"
+                href={cv}
+                target="_blank"
+                rel="noreferrer"
+              >
                 <FaDownload className="" />
                 Download CV
-              </span>
+              </a>
             </button>
           </motion.div>
           <motion.div
