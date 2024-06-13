@@ -12,7 +12,7 @@ function Project() {
           transition={{ duration: 2 }}
         >
           <h2 className="text-2xl font-bold">Projects</h2>
-          <p className="text-gray-700 mt-4 text-base">
+          <p className="text-gray-600 dark:text-gray-400 mt-4 text-base">
             Explore a showcase of projects I´ve worked on. From web applications
             to software solutions
           </p>

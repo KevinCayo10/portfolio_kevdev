@@ -1,11 +1,24 @@
 import { FaArrowRight, FaDownload } from "react-icons/fa";
 
 function About() {
+  const handleSmoothScroll = (e, targetId) => {
+    e.preventDefault();
+    const targetElement = document.getElementById(targetId);
+    const yOffset = -125; // Ajusta este valor según sea necesario
+    const yPosition =
+      targetElement.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+    window.scrollTo({
+      top: yPosition,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <section id="aboutme">
       <div className="container m-auto px-4 py-6 max-w-4xl text-center dark:text-white">
         <h2 className="font-bold text-2xl">About me</h2>
-        <p className="text-gray-700 mt-4 text-base">
+        <p className="text-gray-600 dark:text-gray-400 mt-4 text-base">
           Here you will find more information about me, what I do and my current
           skills mainly in terms of programming and technology.
         </p>
@@ -29,7 +42,13 @@ function About() {
                 life cycle.
               </p>
             </div>
-            <a href="#contactme" className="flex justify-start">
+            <a
+              href="#contactme"
+              className="flex justify-start"
+              onClick={(e) => {
+                handleSmoothScroll(e, "contactme");
+              }}
+            >
               <button className="text-sm py-3  bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full bg-gradient-hover px-5  mt-4 ">
                 <span className="flex justify-around gap-2 items-center text-black ">
                   <FaArrowRight className="" />

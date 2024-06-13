@@ -7,7 +7,6 @@ import ArrowDown from "./assets/images/arrow-down.svg";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import About from "./components/About";
-import { CVPage } from "./views/cv.page";
 
 function App() {
   const [scrolling, setScrolling] = useState(false);
@@ -34,7 +33,6 @@ function App() {
       <About />
       <Project />
       <Contact />
-      <CVPage />
       <Footer />
       <div id="scrollToTopContainer" className="fixed bottom-8 right-8">
         {scrolling && (
