@@ -17,7 +17,7 @@ function Card({ url_img, title, description, url_page, url_github, tools }) {
         {tools.map((element, index) => {
           return (
             <p className="border rounded-full px-2 " key={index}>
-              {element}{" "}
+              {element}
             </p>
           );
         })}

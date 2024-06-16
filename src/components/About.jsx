@@ -61,39 +61,42 @@ function About() {
           <div className="w-full flex flex-col sm:w-1/2">
             <h3 className="text-xl font-medium text-left">Skills</h3>
             <div>
-              <p className="text-base font-light mt-2 text-justify">
+              <p className="text-base font-light mt-2 text-left">
                 I have experience in the following technologies and tools:
               </p>
               <ul className="text-left mt-2 flex flex-wrap gap-3 ">
                 <li className="text-base font-light border rounded-lg py-1 px-3 ">
+                  React.js
+                </li>
+                <li className="text-base font-light border rounded-lg py-1 px-3 ">
+                  Angular
+                </li>
+                <li className="text-base font-light border rounded-lg py-1 px-3">
                   Node.js
                 </li>
                 <li className="text-base font-light border rounded-lg py-1 px-3">
-                  Express.js
+                  Express
                 </li>
                 <li className="text-base font-light border rounded-lg py-1 px-3">
-                  MongoDB
+                  Socket.IO
                 </li>
                 <li className="text-base font-light border rounded-lg py-1 px-3">
-                  PostgreSQL
+                  SQL
                 </li>
                 <li className="text-base font-light border rounded-lg py-1 px-3">
-                  Docker
+                  Python
                 </li>
                 <li className="text-base font-light border rounded-lg py-1 px-3">
-                  Kubernetes
+                  Selenium WebDriver
                 </li>
                 <li className="text-base font-light border rounded-lg py-1 px-3">
                   Git
                 </li>
                 <li className="text-base font-light border rounded-lg py-1 px-3">
-                  Github
+                  GCloud
                 </li>
                 <li className="text-base font-light border rounded-lg py-1 px-3">
-                  Jenkins
-                </li>
-                <li className="text-base font-light border rounded-lg py-1 px-3">
-                  AWS
+                  Ágiles
                 </li>
               </ul>
             </div>

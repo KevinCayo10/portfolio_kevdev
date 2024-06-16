@@ -1,48 +1,52 @@
-import project1 from "../assets/images/project1.png";
+import project3 from "../assets/images/GSV Ventas.gif";
+import project1 from "../assets/images/Vitmap.png";
+import project2 from "../assets/images/certyget.gif";
+import project4 from "../assets/images/PCG_web.gif";
+
 import { FiGithub, FiTwitter, FiLinkedin } from "react-icons/fi";
 export const Projects = [
   {
     id: 1,
-    title: "KevDev Portfolio ",
+    title: "VitMap ",
     description:
       "This portfolio is created with React.js, Framer Motio, Vite and Tailwindcss",
     url_img: project1,
-    url_page: "https://kevdevportfolio.netlify.app/",
+    url_page: "",
     url_github: "",
-    tools: ["ReactJS", "MySQL", "NodeJS"],
+    tools: ["React Native", "Nodejs", "Firebase"],
   },
   {
     id: 2,
-    title: "KevDev Portfolio ",
+    title: "Certyget ",
     description:
       "This portfolio is created with React.js, Framer Motio, Vite and Tailwindcss",
-    url_img: project1,
+    url_img: project2,
 
     url_page: "https://kevdevportfolio.netlify.app/",
     url_github: "",
-    tools: ["ReactJS", "MySQL", "NodeJS"],
+    tools: ["Angular", "Nodejs", "MySQL"],
   },
   {
     id: 3,
-    title: "KevDev Portfolio ",
+    title: "Gestor Ventas ",
     description:
       "This portfolio is created with React.js, Framer Motio, Vite and Tailwindcss",
-    url_img: project1,
+    url_img: project3,
 
     url_page: "https://kevdevportfolio.netlify.app/",
     url_github: "",
-    tools: ["ReactJS", "MySQL", "NodeJS"],
+    tools: ["Angular", "Bootstrap", "NodeJS", "MongoDB"],
   },
   {
     id: 4,
-    title: "KevDev Portfolio ",
+    title: "Website PCG Web ",
     description:
       "This portfolio is created with React.js, Framer Motio, Vite and Tailwindcss",
-    url_img: project1,
+    url_img: project4,
 
-    url_page: "https://kevdevportfolio.netlify.app/",
+    url_page: "",
     url_github: "",
-    tools: ["ReactJS", "MySQL", "NodeJS"],
+    tools: ["Codeigniter", "HTML", "CSS"],
   },
 ];
 

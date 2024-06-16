@@ -60,7 +60,7 @@ function Banner() {
               })}
             </div>
 
-            <button className="text-sm py-3 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full bg-gradient-hover px-5 mt-4 font-bold">
+            <button className="text-sm py-3 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full bg-gradient-hover px-5 mt-4 ">
               <a
                 className="flex justify-around gap-2 items-center text-black"
                 href={cv}
