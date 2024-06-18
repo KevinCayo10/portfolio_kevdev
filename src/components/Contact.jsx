@@ -6,18 +6,17 @@ import { useRef } from "react";
 
 function Contact() {
   const form = useRef();
-  console.log(import.meta.env);
+
   const sendEmail = (e) => {
     e.preventDefault();
+    const template_id = import.meta.env.env.VITE_REACT_APP_TEMPLATE_ID;
+    const service_id = import.meta.env.VITE_REACT_APP_SERVICE_ID;
+    const public_key = import.meta.env.VITE_REACT_APP_PUBLIC_KEY;
+
     emailjs
-      .sendForm(
-        import.meta.env.VITE_REACT_APP_SERVICE_ID,
-        import.meta.env.env.VITE_REACT_APP_TEMPLATE_ID,
-        form.current,
-        {
-          publicKey: import.meta.env.VITE_REACT_APP_PUBLIC_KEY,
-        }
-      )
+      .sendForm(service_id, template_id, form.current, {
+        publicKey: public_key,
+      })
       .then(
         () => {
           console.log("SUCCESS!");
