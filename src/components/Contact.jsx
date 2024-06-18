@@ -30,7 +30,7 @@ function Contact() {
 
   return (
     <section id="contactme">
-      <div className="container mx-auto flex flex-col-reverse py-5 dark:text-white">
+      <div className="relative container mx-auto flex flex-col-reverse py-5 dark:text-white">
         <div className="w-full lg:w-full ">
           <div className="leading-loose ">
             <motion.div
