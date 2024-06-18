@@ -26,6 +26,7 @@ function Contact() {
         },
         (error) => {
           console.log("FAILED...", error.text);
+          toast.error("Error al enviar mensaje");
         }
       );
   };

@@ -13,6 +13,7 @@ function Card({ url_img, title, description, url_page, url_github, tools }) {
     >
       <img src={url_img} alt="" width={200} className="w-full h-auto" />
       <h3 className="text-xl font-semibold mt-5">{title}</h3>
+      <p className="text-gray-600 m-2">{description}</p>
       <div className="flex flex-row gap-2 items-center justify-center m-2">
         {tools.map((element, index) => {
           return (
@@ -22,7 +23,6 @@ function Card({ url_img, title, description, url_page, url_github, tools }) {
           );
         })}
       </div>
-      <p className="text-gray-600">{description}</p>
       <div className="flex  mt-12 gap-1 ">
         {url_page !== "" ? (
           <ButtonG
