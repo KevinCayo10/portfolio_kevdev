@@ -21,8 +21,8 @@ function Contact() {
       )
       .then(
         () => {
-          console.log("SUCCESS!");
           toast.success("Mensaje enviado!");
+          form.current.reset();
         },
         (error) => {
           console.log("FAILED...", error.text);
