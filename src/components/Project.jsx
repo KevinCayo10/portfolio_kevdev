@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 function Project() {
   return (
     <section id="projects">
-      <div className="container m-auto px-4 sm:py-12 text-center dark:text-white">
+      <div className=" container m-auto px-4 sm:py-12 text-center dark:text-white">
         <motion.div
           initial={{ opacity: 0, y: 0 }}
           whileInView={{ opacity: 1, y: 0 }}

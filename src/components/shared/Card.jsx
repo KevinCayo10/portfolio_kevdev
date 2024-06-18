@@ -6,7 +6,7 @@ import { FaDownload, FaGit, FaGithub, FaLink } from "react-icons/fa";
 function Card({ url_img, title, description, url_page, url_github, tools }) {
   return (
     <motion.div
-      className="border  rounded-md p-5 flex-1 "
+      className="relative border  rounded-md p-5 flex-1 "
       initial={{ opacity: 1, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, ease: "easeInOut" }}
@@ -24,12 +24,16 @@ function Card({ url_img, title, description, url_page, url_github, tools }) {
       </div>
       <p className="text-gray-600">{description}</p>
       <div className="flex  mt-12 gap-1 ">
-        <ButtonG
-          version="live"
-          url={url_page}
-          label={"Live preview"}
-          iconName={<FaLink></FaLink>}
-        />
+        {url_page !== "" ? (
+          <ButtonG
+            version="live"
+            url={url_page}
+            label={"Live preview"}
+            iconName={<FaLink></FaLink>}
+          />
+        ) : (
+          ""
+        )}
         <ButtonG
           version="code"
           url={url_github}

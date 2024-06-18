@@ -7,6 +7,7 @@ import ArrowDown from "./assets/images/arrow-down.svg";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import About from "./components/About";
+import ParticleBg from "./components/Particle";
 
 function App() {
   const [scrolling, setScrolling] = useState(false);
@@ -28,6 +29,9 @@ function App() {
 
   return (
     <div className="max-w-4xl m-auto relative">
+      <div className="absolute inset-0 z-0 ">
+        <ParticleBg />
+      </div>
       <Header />
       <Main />
       <About />

@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { FaArrowRight, FaDownload } from "react-icons/fa";
 
 function About() {
@@ -16,12 +17,18 @@ function About() {
 
   return (
     <section id="aboutme">
-      <div className="container m-auto px-4 py-6 max-w-4xl text-center dark:text-white">
-        <h2 className="font-bold text-2xl">About me</h2>
-        <p className="text-gray-600 dark:text-gray-400 mt-4 text-base">
-          Here you will find more information about me, what I do and my current
-          skills mainly in terms of programming and technology.
-        </p>
+      <div className=" container m-auto px-4 py-6 max-w-4xl text-center dark:text-white">
+        <motion.div
+          initial={{ opacity: 0, y: 0 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 2 }}
+        >
+          <h2 className="font-bold text-2xl">About me</h2>
+          <p className="text-gray-600 dark:text-gray-400 mt-4 text-base">
+            Here you will find more information about me, what I do and my
+            current skills mainly in terms of programming and technology.
+          </p>
+        </motion.div>
         {/* Profile */}
         <div className="mt-5 flex flex-col gap-10 sm:flex-row">
           <div className="w-full flex flex-col sm:w-1/2 ">

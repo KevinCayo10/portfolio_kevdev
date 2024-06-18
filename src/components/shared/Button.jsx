@@ -8,7 +8,7 @@ function ButtonG({ iconName, url, label, version }) {
           ? "text-sm w-1/2 py-3  bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full bg-gradient-hover px-5 "
           : "flex-1 text-sm py-3 border rounded-full hover:border-blue-500 hover:text-blue-500"
       }`}
-      onClick={() => (window.location.href = url)}
+      onClick={() => window.open(url, "_blank")}
     >
       <span
         className={`${

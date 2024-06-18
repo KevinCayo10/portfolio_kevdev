@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import Portfile from "../assets/images/perfil.png";
+import Portfile from "../assets/images/perfil_8.png";
 import { socialLinks } from "../data/info";
 import { FaDownload } from "react-icons/fa";
 import { FaMouse } from "react-icons/fa"; // Importa el icono de mouse
@@ -73,7 +73,7 @@ function Banner() {
             </button>
           </motion.div>
           <motion.div
-            className=" w-full sm:w-1/3  "
+            className=" w-full sm:w-1/3  profile-image"
             initial={{ opacity: 0, x: 25 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1 }}

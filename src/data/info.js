@@ -12,7 +12,7 @@ export const Projects = [
       "This portfolio is created with React.js, Framer Motio, Vite and Tailwindcss",
     url_img: project1,
     url_page: "",
-    url_github: "",
+    url_github: "https://github.com/MarcoOrtiz333/VitMapBackend/tree/develop",
     tools: ["React Native", "Nodejs", "Firebase"],
   },
   {
@@ -21,9 +21,8 @@ export const Projects = [
     description:
       "This portfolio is created with React.js, Framer Motio, Vite and Tailwindcss",
     url_img: project2,
-
-    url_page: "https://kevdevportfolio.netlify.app/",
-    url_github: "",
+    url_page: "",
+    url_github: "https://github.com/KevinCayo10/Certyget_Bakend",
     tools: ["Angular", "Nodejs", "MySQL"],
   },
   {
@@ -33,8 +32,8 @@ export const Projects = [
       "This portfolio is created with React.js, Framer Motio, Vite and Tailwindcss",
     url_img: project3,
 
-    url_page: "https://kevdevportfolio.netlify.app/",
-    url_github: "",
+    url_page: "",
+    url_github: "https://github.com/KevinCayo10/proyecto_ventas",
     tools: ["Angular", "Bootstrap", "NodeJS", "MongoDB"],
   },
   {
@@ -44,8 +43,8 @@ export const Projects = [
       "This portfolio is created with React.js, Framer Motio, Vite and Tailwindcss",
     url_img: project4,
 
-    url_page: "",
-    url_github: "",
+    url_page: "https://almogascialtda.com/",
+    url_github: "https://github.com/KevinCayo10/bot_emp_bd/tree/develop",
     tools: ["Codeigniter", "HTML", "CSS"],
   },
 ];
