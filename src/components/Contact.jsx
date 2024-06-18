@@ -3,23 +3,26 @@ import FormInput from "./shared/FormInput";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 import { useRef } from "react";
+import toast, { Toaster } from "react-hot-toast";
 
 function Contact() {
   const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
-    const template_id = import.meta.env.env.VITE_REACT_APP_TEMPLATE_ID;
-    const service_id = import.meta.env.VITE_REACT_APP_SERVICE_ID;
-    const public_key = import.meta.env.VITE_REACT_APP_PUBLIC_KEY;
-
     emailjs
-      .sendForm(service_id, template_id, form.current, {
-        publicKey: public_key,
-      })
+      .sendForm(
+        import.meta.env.VITE_REACT_APP_SERVICE_ID,
+        import.meta.env.VITE_REACT_APP_TEMPLATE_ID,
+        form.current,
+        {
+          publicKey: import.meta.env.VITE_REACT_APP_PUBLIC_KEY,
+        }
+      )
       .then(
         () => {
           console.log("SUCCESS!");
+          toast.success("Mensaje enviado!");
         },
         (error) => {
           console.log("FAILED...", error.text);
@@ -29,6 +32,7 @@ function Contact() {
 
   return (
     <section id="contactme">
+      <Toaster position="bottom-center" reverseOrder={true} />
       <div className="relative container mx-auto flex flex-col-reverse py-5 dark:text-white">
         <div className="w-full lg:w-full ">
           <div className="leading-loose ">
