@@ -18,7 +18,7 @@ function About() {
 
   return (
     <section id="aboutme">
-      <div className=" relative container m-auto px-4 py-6 max-w-4xl text-center dark:text-white">
+      <div className=" relative container m-auto px-4 py-12 max-w-4xl text-center dark:text-white ">
         <motion.div
           initial={{ opacity: 0, y: 0 }}
           whileInView={{ opacity: 1, y: 0 }}

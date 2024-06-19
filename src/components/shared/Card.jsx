@@ -14,33 +14,33 @@ function Card({
 }) {
   return (
     <motion.div
-      className="relative border  rounded-md p-5 flex-1 "
+      className="relative border rounded-md p-5 flex-1 flex flex-col dark:border-gray-600"
       initial={{ opacity: 1, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, ease: "easeInOut" }}
     >
       <img src={url_img} alt="" width={200} className="w-full h-auto" />
       <h3 className="text-xl font-semibold mt-5">{title}</h3>
-      <p className="text-gray-600 m-2">{description}</p>
-      <div className="flex flex-wrap gap-2 items-center  m-2 justify-center">
+      <p className="text-gray-600 m-2 max-w-lg">{description}</p>
+      <div className="flex flex-wrap gap-2 items-center m-2 justify-center">
         {tools.map((element, index) => {
           return (
-            <p className="border rounded-full px-2 " key={index}>
+            <p className="border rounded-full px-2 text-center" key={index}>
               {element}
             </p>
           );
         })}
       </div>
-      <div className="flex justify-center gap-2 m-2">
-        <p className="border  rounded-full px-2">{position}</p>
+      <div className="flex justify-center gap-2 my-4">
+        <p className="border-x-2 px-2">{position}</p>
       </div>
-      <div className="flex  mt-12 gap-1 ">
+      <div className="flex mt-auto gap-1">
         {url_page !== "" ? (
           <ButtonG
             version="live"
             url={url_page}
             label={"Live preview"}
-            iconName={<FaLink></FaLink>}
+            iconName={<FaLink />}
           />
         ) : (
           ""
@@ -49,7 +49,7 @@ function Card({
           version="code"
           url={url_github}
           label={"Github"}
-          iconName={<FaGithub></FaGithub>}
+          iconName={<FaGithub />}
         />
       </div>
     </motion.div>

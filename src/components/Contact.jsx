@@ -34,15 +34,15 @@ function Contact() {
   return (
     <section id="contactme">
       <Toaster position="bottom-center" reverseOrder={true} />
-      <div className="relative container mx-auto flex flex-col-reverse py-5 dark:text-white">
-        <div className="w-full lg:w-full ">
+      <div className="relative container mx-auto flex flex-col-reverse py-12   dark:text-white ">
+        <div className="w-full lg:w-full  px-4 ">
           <div className="leading-loose ">
             <motion.div
               initial={{ opacity: 0, y: 0 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 2 }}
             >
-              <h2 className="text-2xl font-semibold px-4 text-center">
+              <h2 className="text-2xl font-semibold text-center ">
                 Contact me!
               </h2>
               <p className="text-gray-600 dark:text-gray-400 text-base font-light text-center px-4">
@@ -56,7 +56,7 @@ function Contact() {
             <form
               ref={form}
               onSubmit={sendEmail}
-              className="container m-auto px-4 rounded-xl shadow-xl text-left "
+              className="container m-auto  rounded-xl shadow-xl text-left "
             >
               <div className="mt-5">
                 <div className="flex flex-col sm:flex-row sm:gap-5">

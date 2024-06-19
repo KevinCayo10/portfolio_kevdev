@@ -5,13 +5,13 @@ import { motion } from "framer-motion";
 function Project() {
   return (
     <section id="projects">
-      <div className=" container m-auto px-4 sm:py-12 text-center dark:text-white">
+      <div className=" container m-auto px-4 py-12 text-center dark:text-white  ">
         <motion.div
           initial={{ opacity: 0, y: 0 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 2 }}
         >
-          <h2 className="text-2xl font-bold">Projects</h2>
+          <h2 className="text-2xl font-bold ">Projects</h2>
           <p className="text-gray-600 dark:text-gray-400 mt-4 text-base">
             Explore a showcase of projects I´ve worked on. From web applications
             to software solutions

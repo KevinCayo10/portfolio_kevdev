@@ -58,7 +58,9 @@ export default function Header() {
       <div className="container m-auto px-4 py-6 max-w-4xl bg-white dark:bg-black">
         <div className="flex flex-col gap-4 sm:flex-row justify-between items-center">
           <div>
-            <h1 className="font-extrabold text-2xl dark:text-white">KevDev</h1>
+            <h1 className="font-extrabold text-2xl dark:text-white">
+              KevDev Porftolio
+            </h1>
           </div>
           <div>
             <ul className="flex gap-4 items-center">

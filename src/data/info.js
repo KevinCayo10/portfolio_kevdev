@@ -2,6 +2,7 @@ import project3 from "../assets/images/GSV Ventas.gif";
 import project1 from "../assets/images/Vitmap.png";
 import project2 from "../assets/images/certyget.gif";
 import project4 from "../assets/images/PCG_web.gif";
+import project5 from "../assets/images/portfolio.png";
 
 import { FiGithub, FiLinkedin, FiInstagram, FiMail } from "react-icons/fi";
 export const Projects = [
@@ -27,7 +28,7 @@ export const Projects = [
   },
   {
     id: 3,
-    title: "Gestor Ventas ",
+    title: "Sales web app",
     description: "Web system to manage product sales",
     position: "Fullstack Developer",
 
@@ -39,15 +40,26 @@ export const Projects = [
   },
   {
     id: 4,
-    title: "Website PCG Web ",
+    title: "Website PCG ",
     description:
-      "Website to Programa Contable General (PCG) of Empresarial Díaz & Bonilla S. A. ",
+      "Website for Empresarial Díaz & Bonilla S. A., where you can view the company's information",
     position: "Frontend Developer",
-
     url_img: project4,
     url_page: "https://almogascialtda.com/",
     url_github: "https://github.com/KevinCayo10/bot_emp_bd/tree/develop",
     tools: ["Codeigniter", "HTML", "CSS"],
+  },
+  {
+    id: 5,
+    title: "My Portfolio ",
+    description:
+      "Here you can explore my projects and learn more about me and my work.",
+    position: "Frontend Developer",
+
+    url_img: project5,
+    url_page: "https://portfolio-kevdev.vercel.app/",
+    url_github: "https://github.com/KevinCayo10/portfolio_kevdev",
+    tools: ["Reactjs", "Tailwindcss", "Framer Motion"],
   },
 ];
 
@@ -105,7 +117,7 @@ export const Menu = [
 export const skills = [
   {
     id: 1,
-    name: "React.js",
+    name: "Reactjs",
   },
   {
     id: 2,
@@ -113,7 +125,7 @@ export const skills = [
   },
   {
     id: 3,
-    name: "Node.js",
+    name: "Nodejs",
   },
   {
     id: 4,
