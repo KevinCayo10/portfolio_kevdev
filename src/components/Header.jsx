@@ -16,10 +16,30 @@ export default function Header() {
     });
   };
 
-  const [darkMode, setDarkMode] = useState("light");
+  // Estado del modo oscuro basado en la preferencia del usuario
+  const [darkMode, setDarkMode] = useState(() => {
+    return window.matchMedia &&
+      window.matchMedia("(prefers-color-scheme: dark)").matches
+      ? "dark"
+      : "light";
+  });
+
   const toggleDarkMode = () => {
-    setDarkMode((prevtheme) => (prevtheme === "light" ? "dark" : "light"));
+    setDarkMode((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
   };
+
+  useEffect(() => {
+    const updateDarkMode = (e) => {
+      setDarkMode(e.matches ? "dark" : "light");
+    };
+
+    const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
+    mediaQuery.addListener(updateDarkMode);
+
+    return () => {
+      mediaQuery.removeListener(updateDarkMode);
+    };
+  }, []);
 
   useEffect(() => {
     if (darkMode === "dark") {
@@ -35,7 +55,7 @@ export default function Header() {
 
   return (
     <header className="fixed left-0 right-0 top-0 z-20" id="home">
-      <div className="container m-auto px-4 py-6 max-w-4xl  bg-white dark:bg-black">
+      <div className="container m-auto px-4 py-6 max-w-4xl bg-white dark:bg-black">
         <div className="flex flex-col gap-4 sm:flex-row justify-between items-center">
           <div>
             <h1 className="font-extrabold text-2xl dark:text-white">KevDev</h1>
@@ -50,7 +70,7 @@ export default function Header() {
                     <a
                       href={option.url}
                       onClick={(e) => handleSmoothScroll(e, targetId)}
-                      className="text-gray-600 dark:text-gray-400  dark:hover:text-white cursor-pointer hover:text-gray-800 text-sm sm:text-base"
+                      className="text-gray-600 dark:text-gray-400 dark:hover:text-white cursor-pointer hover:text-gray-800 text-sm sm:text-base"
                     >
                       {option.title}
                     </a>
