@@ -8,8 +8,8 @@ export const Projects = [
   {
     id: 1,
     title: "VitMap ",
-    description: "Aplicación movil para localizar médicos cercanos. ",
-    aporte: "Encargado del desarrollo Backend",
+    description: "Mobile application to locate nearby doctors. ",
+    position: "Backend Developer",
     url_img: project1,
     url_page: "",
     url_github: "https://github.com/MarcoOrtiz333/VitMapBackend/tree/develop",
@@ -18,8 +18,8 @@ export const Projects = [
   {
     id: 2,
     title: "Certyget ",
-    description: "Sistema web para generar certificados de cursos",
-    aporte: "",
+    description: "Web system to generate course certificates",
+    position: "Fullstack Developer",
     url_img: project2,
     url_page: "",
     url_github: "https://github.com/KevinCayo10/Certyget_Bakend",
@@ -28,7 +28,9 @@ export const Projects = [
   {
     id: 3,
     title: "Gestor Ventas ",
-    description: "Sistema web para gestionar ventas de productos",
+    description: "Web system to manage product sales",
+    position: "Fullstack Developer",
+
     url_img: project3,
 
     url_page: "",
@@ -39,7 +41,9 @@ export const Projects = [
     id: 4,
     title: "Website PCG Web ",
     description:
-      "Sitio web del Sistema Programa Contable General (PCG) de Empresarial Díaz & Bonilla S. A. ",
+      "Website to Programa Contable General (PCG) of Empresarial Díaz & Bonilla S. A. ",
+    position: "Frontend Developer",
+
     url_img: project4,
     url_page: "https://almogascialtda.com/",
     url_github: "https://github.com/KevinCayo10/bot_emp_bd/tree/develop",
@@ -56,7 +60,7 @@ export const socialLinks = [
   {
     id: 1,
     icon: FiLinkedin,
-    url: "www.linkedin.com/in/kevincayo10",
+    url: "https://linkedin.com/in/kevincayo10",
   },
   {
     id: 2,
@@ -78,22 +82,65 @@ export const socialLinks = [
 export const Menu = [
   {
     id: 1,
-    title: "Inicio",
+    title: "Home",
     url: "#top",
   },
   {
     id: 2,
-    title: "Sobre mí",
+    title: "About me",
     url: "#aboutme",
   },
   {
     id: 3,
-    title: "Proyectos",
+    title: "Projects",
     url: "#projects",
   },
   {
     id: 4,
-    title: "Contacto",
+    title: "Contact me",
     url: "#contactme",
+  },
+];
+
+export const skills = [
+  {
+    id: 1,
+    name: "React.js",
+  },
+  {
+    id: 2,
+    name: "Angular",
+  },
+  {
+    id: 3,
+    name: "Node.js",
+  },
+  {
+    id: 4,
+    name: "Express",
+  },
+  {
+    id: 5,
+    name: "Socket.IO",
+  },
+  {
+    id: 6,
+    name: "SQL",
+  },
+  {
+    id: 7,
+    name: "Python",
+  },
+  {
+    id: 8,
+    name: "Selenium WebDriver",
+  },
+  {
+    id: 9,
+    name: "Git",
+  },
+  {
+    id: 10,
+    name: "GCloud",
   },
 ];

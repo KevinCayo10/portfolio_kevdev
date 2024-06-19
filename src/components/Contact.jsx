@@ -43,7 +43,7 @@ function Contact() {
               transition={{ duration: 2 }}
             >
               <h2 className="text-2xl font-semibold px-4 text-center">
-                Contact me
+                Contact me!
               </h2>
               <p className="text-gray-600 dark:text-gray-400 text-base font-light text-center px-4">
                 Get in touch! Whether it´s for inquiries, collaborations, or

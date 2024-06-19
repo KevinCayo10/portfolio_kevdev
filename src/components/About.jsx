@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { FaArrowRight, FaDownload } from "react-icons/fa";
+import { skills } from "../data/info";
 
 function About() {
   const handleSmoothScroll = (e, targetId) => {
@@ -72,39 +73,16 @@ function About() {
                 I have experience in the following technologies and tools:
               </p>
               <ul className="text-left mt-2 flex flex-wrap gap-3 ">
-                <li className="text-base font-light border rounded-lg py-1 px-3 ">
-                  React.js
-                </li>
-                <li className="text-base font-light border rounded-lg py-1 px-3 ">
-                  Angular
-                </li>
-                <li className="text-base font-light border rounded-lg py-1 px-3">
-                  Node.js
-                </li>
-                <li className="text-base font-light border rounded-lg py-1 px-3">
-                  Express
-                </li>
-                <li className="text-base font-light border rounded-lg py-1 px-3">
-                  Socket.IO
-                </li>
-                <li className="text-base font-light border rounded-lg py-1 px-3">
-                  SQL
-                </li>
-                <li className="text-base font-light border rounded-lg py-1 px-3">
-                  Python
-                </li>
-                <li className="text-base font-light border rounded-lg py-1 px-3">
-                  Selenium WebDriver
-                </li>
-                <li className="text-base font-light border rounded-lg py-1 px-3">
-                  Git
-                </li>
-                <li className="text-base font-light border rounded-lg py-1 px-3">
-                  GCloud
-                </li>
-                <li className="text-base font-light border rounded-lg py-1 px-3">
-                  Ágiles
-                </li>
+                {skills.map((item) => {
+                  return (
+                    <li
+                      key={item.id}
+                      className="text-base font-light border rounded-lg py-1 px-3 "
+                    >
+                      {item.name}
+                    </li>
+                  );
+                })}
               </ul>
             </div>
           </div>

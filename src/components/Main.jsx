@@ -48,7 +48,8 @@ function Banner() {
                 return (
                   <a
                     href={link.url}
-                    target="__blank"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     key={link.id}
                     className="text-gray-400 cursor-pointer rounded-lg bg-gray-300 p-2 duration-300 hover:text-blue-500 dark:text-gray-500 dark:hover:text-blue-500"
                   >
@@ -89,7 +90,7 @@ function Banner() {
       {/* Mouse Icon */}
       <a
         href="#aboutme"
-        className=" transform -translate-x-1/2  "
+        className=" transform "
         onClick={(e) => {
           handleSmoothScroll(e, "aboutme");
         }}
