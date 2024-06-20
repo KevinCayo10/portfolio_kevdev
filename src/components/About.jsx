@@ -35,20 +35,24 @@ function About() {
           <div className="w-full flex flex-col sm:w-1/2 ">
             <h3 className="text-xl font-medium text-left">¡Get to know me!</h3>
             <div className="text-left">
-              <p className="text-base font-light mt-2 ">
-                I am a passionate backend developer with experience in building
-                and managing the logic and functionality behind websites and web
-                applications. My focus is on creation of robust and efficient
-                systems that drive the overall success of the product.
-              </p>
-              <p className="text-base font-light mt-2 ">
-                In addition to my experience in backend development, I have a
-                great interest in learning and applying DevOps practices,
-                especially in continuous integration (CI) and continuous
-                delivery (CD). strongly believe on the importance of automating
-                processes and improving efficiency in the software development
-                life cycle.
-              </p>
+              <div>
+                <p className="text-base font-light mt-2">
+                  I am a passionate fullstack developer specializing in backend
+                  and frontend development. My focus is on building and managing
+                  the logic and functionality behind websites and web
+                  applications, leveraging my expertise to create robust and
+                  efficient systems that drive the overall success of the
+                  product.
+                </p>
+                <p className="text-base font-light mt-2">
+                  In addition to my technical skills, I have a strong interest
+                  in mastering DevOps practices, particularly continuous
+                  integration (CI) and continuous delivery (CD). I thrive on
+                  challenges and am dedicated to automating processes and
+                  enhancing efficiency throughout the software development life
+                  cycle.
+                </p>
+              </div>
             </div>
             <a
               href="#contactme"

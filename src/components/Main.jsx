@@ -39,9 +39,8 @@ function Banner() {
               Software Engineer
             </h2>
             <p className="mt-4 text-gray-600">
-              Specialized in Backend development, seeking to apply my
-              development skills with a collaborative, communicative approach
-              and a passion for the field.
+              Specializing in Fullstack development. I bring a collaborative,
+              communicative approach and a strong passion for the field.
             </p>
             <div className="flex flex-row gap-5 justify-center sm:justify-start mt-5">
               {socialLinks.map((link) => {

@@ -21,11 +21,11 @@ function Card({
     >
       <img src={url_img} alt="" width={200} className="w-full h-auto" />
       <h3 className="text-xl font-semibold mt-5">{title}</h3>
-      <p className="text-gray-600 m-2 max-w-lg">{description}</p>
-      <div className="flex flex-wrap gap-2 items-center m-2 justify-center">
+      <p className="text-gray-600 m-2 max-w-xl">{description}</p>
+      <div className="flex flex-wrap gap-2 items-center  justify-center">
         {tools.map((element, index) => {
           return (
-            <p className="border rounded-full px-2 text-center" key={index}>
+            <p className="border rounded-lg py-1 px-3 text-center" key={index}>
               {element}
             </p>
           );
