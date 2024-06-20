@@ -21,7 +21,7 @@ function Contact() {
       )
       .then(
         () => {
-          toast.success("Mensaje enviado!");
+          toast.success("Message send!");
           form.current.reset();
         },
         (error) => {
