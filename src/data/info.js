@@ -40,7 +40,7 @@ export const Projects = [
   },
   {
     id: 4,
-    title: "Website PCG ",
+    title: "Sitio web PCG ",
     description:
       "Sitio web informativo para el producto PCG Web de Empresarial Díaz & Bonilla S. A.",
     position: "Desarrollador Frontend ",

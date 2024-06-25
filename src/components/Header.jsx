@@ -59,7 +59,7 @@ export default function Header() {
         <div className="flex flex-col gap-4 sm:flex-row justify-between items-center">
           <div>
             <h1 className="font-extrabold text-2xl dark:text-white">
-              KevDev Porftolio
+              KevDev Portafolio
             </h1>
           </div>
           <div>
