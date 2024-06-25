@@ -33,14 +33,15 @@ function Banner() {
             transition={{ duration: 1 }}
           >
             <h2 className="font-bold text-3xl dark:text-white sm:text-4xl">
-              Hello, I´m Kevin Cayo
+              Hola, Soy Kevin Cayo
             </h2>
             <h2 className="font-bold text-2xl mt-1 gradiant-text sm:text-4xl">
-              Software Engineer
+              Ingeniero en Software
             </h2>
             <p className="mt-4 text-gray-600">
-              Specializing in Fullstack development. I bring a collaborative,
-              communicative approach and a strong passion for the field.
+              Desarrollador Fullstack enfocado en crear soluciones web
+              innovadoras y eficientes. Basado en una colaboración efectiva y
+              una comunicación clara
             </p>
             <div className="flex flex-row gap-5 justify-center sm:justify-start mt-5">
               {socialLinks.map((link) => {
@@ -68,7 +69,7 @@ function Banner() {
                 rel="noreferrer"
               >
                 <FaDownload className="" />
-                Download CV
+                Descargar CV
               </a>
             </button>
           </motion.div>

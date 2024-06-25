@@ -39,7 +39,7 @@ function Card({
           <ButtonG
             version="live"
             url={url_page}
-            label={"Live preview"}
+            label={"Vista previa"}
             iconName={<FaLink />}
           />
         ) : (

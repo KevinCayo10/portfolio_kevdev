@@ -11,10 +11,10 @@ function Project() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 2 }}
         >
-          <h2 className="text-2xl font-bold ">Projects</h2>
+          <h2 className="text-2xl font-bold ">Proyectos</h2>
           <p className="text-gray-600 dark:text-gray-400 mt-4 text-base">
-            Explore a showcase of projects I´ve worked on. From web applications
-            to software solutions
+            Explora una muestra de proyectos en los que he trabajado. Desde
+            aplicaciones web hasta soluciones de software.
           </p>
         </motion.div>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 mt-11">

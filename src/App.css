@@ -21,7 +21,7 @@ body {
     width: 0%;
   }
   to {
-    width: 325px;
+    width: 390px;
   }
 }
 
@@ -31,7 +31,7 @@ body {
     width: 0%;
   }
   to {
-    width: 230px;
+    width: 280px;
   }
 }
 
@@ -113,71 +113,4 @@ body {
   background-size: cover;
   filter: grayscale(100%);
   z-index: -1;
-}
-
-.particle,
-.particle:after {
-  background: transparent;
-}
-
-.particle:after {
-  position: absolute;
-  content: "";
-  top: var(--spacing);
-}
-
-/* Particle 1 */
-.particle-1 {
-  animation: animParticle var(--time-1) linear infinite;
-  box-shadow: 0px 0px var(--color-particle);
-  border-radius: 50%;
-  height: 2px;
-  width: 2px;
-}
-
-.particle-1:after {
-  box-shadow: 0px 0px var(--color-particle);
-  border-radius: 50%;
-  height: 2px;
-  width: 2px;
-}
-
-/* Particle 2 */
-.particle-2 {
-  animation: animParticle var(--time-2) linear infinite;
-  box-shadow: 0px 0px var(--color-particle);
-  border-radius: 50%;
-  height: 2px;
-  width: 2px;
-}
-
-.particle-2:after {
-  box-shadow: 0px 0px var(--color-particle);
-  border-radius: 50%;
-  height: 3px;
-  width: 3px;
-}
-
-/* Particle 3 */
-.particle-3:after {
-  box-shadow: 0px 0px var(--color-particle);
-  border-radius: 50%;
-  height: 3px;
-  width: 3px;
-}
-
-/* Particle 4 */
-.particle-4 {
-  animation: animParticle var(--time-4) linear infinite;
-  box-shadow: 0px 0px var(--color-particle);
-  border-radius: 50%;
-  height: 1px;
-  width: 1px;
-}
-
-.particle-4:after {
-  box-shadow: 0px 0px var(--color-particle);
-  border-radius: 50%;
-  height: 1px;
-  width: 1px;
 }

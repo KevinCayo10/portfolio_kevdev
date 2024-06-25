@@ -1,9 +1,9 @@
-import { FaArrowRight } from "react-icons/fa";
 import FormInput from "./shared/FormInput";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 import { useRef } from "react";
 import toast, { Toaster } from "react-hot-toast";
+import { FaPaperPlane } from "react-icons/fa";
 
 function Contact() {
   const form = useRef();
@@ -43,13 +43,14 @@ function Contact() {
               transition={{ duration: 2 }}
             >
               <h2 className="text-2xl font-semibold text-center ">
-                Contact me!
+                ¡Contáctame!
               </h2>
               <p className="text-gray-600 dark:text-gray-400 text-base font-light text-center px-4">
-                Get in touch! Whether it´s for inquiries, collaborations, or
-                just a tech chat, I´m here. Developers, clients, or fellow tech
-                enthusiasts, I´m open to new connections and opportunities.
-                Let´s connect!
+                ¡Ponte en contacto! Ya sea para consultas, colaboraciones o
+                simplemente para charlar sobre tecnología, estoy aquí.
+                Desarrolladores, clientes o compañeros entusiastas de la
+                tecnología, estoy abierto a nuevas conexiones y oportunidades.
+                ¡Contáctame!
               </p>
             </motion.div>
 
@@ -67,7 +68,7 @@ function Contact() {
                       inputType="text"
                       inputId="name"
                       inputName="name"
-                      placeholderText="Your name"
+                      placeholderText="Nombres"
                       ariaLabelName="Name"
                     />
                   </div>
@@ -78,7 +79,7 @@ function Contact() {
                       inputType="email"
                       inputId="email"
                       inputName="email"
-                      placeholderText="Your email"
+                      placeholderText="Email"
                       ariaLabelName="Email"
                     />
                   </div>
@@ -89,7 +90,7 @@ function Contact() {
                   inputType="text"
                   inputId="subject"
                   inputName="subject"
-                  placeholderText="Subject"
+                  placeholderText="Tema"
                   ariaLabelName="Subject"
                 />
                 <div className="mt-6">
@@ -101,7 +102,7 @@ function Contact() {
                     cols="14"
                     rows="3"
                     aria-label="Message"
-                    placeholder="Message"
+                    placeholder="Mensaje"
                   ></textarea>
                 </div>
                 <div className="flex flex-1 justify-center items-end pb-4">
@@ -110,8 +111,8 @@ function Contact() {
                     className="text-sm py-3  bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full bg-gradient-hover px-5  mt-4 dark:text-black"
                   >
                     <span className="flex justify-around gap-2 items-center text-black ">
-                      <FaArrowRight className="" />
-                      Contact me
+                      <FaPaperPlane className="" />
+                      Enviar
                     </span>
                   </button>
                 </div>

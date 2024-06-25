@@ -9,8 +9,8 @@ export const Projects = [
   {
     id: 1,
     title: "VitMap ",
-    description: "Mobile application to locate nearby doctors. ",
-    position: "Backend Developer",
+    description: "Aplicación movil para localizar doctores ",
+    position: "Desarrollador backend",
     url_img: project1,
     url_page: "",
     url_github: "https://github.com/MarcoOrtiz333/VitMapBackend/tree/develop",
@@ -19,8 +19,8 @@ export const Projects = [
   {
     id: 2,
     title: "Certyget ",
-    description: "Web system to generate course certificates",
-    position: "Fullstack Developer",
+    description: "Sistema web para la generación y consulta de certificados",
+    position: "Desarrollador Fullstack",
     url_img: project2,
     url_page: "",
     url_github: "https://github.com/KevinCayo10/Certyget_Bakend",
@@ -28,9 +28,9 @@ export const Projects = [
   },
   {
     id: 3,
-    title: "Sales web app",
-    description: "Web system to manage product sales",
-    position: "Fullstack Developer",
+    title: "Gestor de ventas",
+    description: "Aplicativo web para la gestión de ventas.",
+    position: "Desarrollador Fullstack",
 
     url_img: project3,
 
@@ -42,8 +42,8 @@ export const Projects = [
     id: 4,
     title: "Website PCG ",
     description:
-      "Website for Empresarial Díaz & Bonilla S. A., where you can view the company's information",
-    position: "Frontend Developer",
+      "Sitio web informativo para el producto PCG Web de Empresarial Díaz & Bonilla S. A.",
+    position: "Desarrollador Frontend ",
     url_img: project4,
     url_page: "https://almogascialtda.com/",
     url_github: "https://github.com/KevinCayo10/bot_emp_bd/tree/develop",
@@ -51,10 +51,10 @@ export const Projects = [
   },
   {
     id: 5,
-    title: "My Portfolio ",
+    title: "Portafolio ",
     description:
-      "Here you can explore my projects and learn more about me and my work.",
-    position: "Frontend Developer",
+      "Página web donde encontraras mis proyectos y aprenderas más sobre mí.",
+    position: "Desarrollador Frontend",
 
     url_img: project5,
     url_page: "https://portfolio-kevdev.vercel.app/",
@@ -94,22 +94,22 @@ export const socialLinks = [
 export const Menu = [
   {
     id: 1,
-    title: "Home",
+    title: "Inicio",
     url: "#top",
   },
   {
     id: 2,
-    title: "About me",
+    title: "Acerca de mí",
     url: "#aboutme",
   },
   {
     id: 3,
-    title: "Projects",
+    title: "Proyectos",
     url: "#projects",
   },
   {
     id: 4,
-    title: "Contact me",
+    title: "Contacto",
     url: "#contactme",
   },
 ];
