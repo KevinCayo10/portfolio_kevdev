@@ -57,17 +57,15 @@ function About() {
             </div>
             <a
               href="#contactme"
-              className="flex justify-start"
+              className="flex justify-start items-center btn border-none text-sm py-3  bg-gradient-to-r from-blue-500 to-cyan-500 bg-gradient-hover px-5  mt-4 w-1/3 md:w-1/2 lg:w-1/4"
               onClick={(e) => {
                 handleSmoothScroll(e, "contactme");
               }}
             >
-              <button className="btn border-none text-sm py-3  bg-gradient-to-r from-blue-500 to-cyan-500 bg-gradient-hover px-5  mt-4 ">
-                <span className="flex justify-around gap-2 items-center text-black ">
-                  <FaArrowRight className="" />
-                  Contáctame
-                </span>
-              </button>
+              <span className="flex justify-around gap-2 items-center text-black ">
+                <FaArrowRight className="" />
+                Contáctame
+              </span>
             </a>
           </div>
           {/* Skills */}
@@ -90,6 +88,14 @@ function About() {
                 })}
               </ul>
             </div>
+            <div class="divider"></div>
+
+            <h3 className="text-xl font-medium text-left ">Educación </h3>
+            <p className="text-left">
+              <strong>Universidad Técnica de Ambato</strong>
+            </p>
+            <p className="text-left">Mayo 2020 - Febrero 2025</p>
+            <p className="text-left">Ingeniería en Software</p>
           </div>
         </div>
       </div>

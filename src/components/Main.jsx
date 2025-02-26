@@ -82,14 +82,14 @@ function Banner() {
             <img
               src={Portfile}
               alt="Profile"
-              className=" w-2/3 sm:w-full md:w-auto m-auto"
+              className=" w-2/3 sm:w-full md:w-3/4 m-auto"
             />
           </motion.div>
         </div>
       </section>
       {/* Mouse Icon */}
       <a
-        href="#aboutme"
+        href="#experience"
         className=" transform "
         onClick={(e) => {
           handleSmoothScroll(e, "aboutme");

@@ -32,8 +32,8 @@ export const Experiences = [
     level: "Trainer",
     position: "Desarrollador de software",
     functions:
-      "desarrollo de diversos sistemas para modernizar y mejorar los servicios de la empresa, con el objetivo de ofrecer unaexperiencia de alto valor a los clientes y cumplir con su misión.",
-    technology: ["Codeigneither", "Python", "Selenium WebDriver"],
+      "Desarrollo de diversos sistemas para modernizar y mejorar los servicios de la empresa, con el objetivo de ofrecer unaexperiencia de alto valor a los clientes y cumplir con su misión.",
+    technology: ["CodeIgniter", "Python", "Selenium WebDriver"],
   },
   {
     id: 3,
@@ -49,7 +49,6 @@ export const Experiences = [
       "Node.js",
       "Express.js",
       "Socket.io",
-      "Google Map API",
       "Firebase",
     ],
   },
@@ -144,16 +143,21 @@ export const Menu = [
   },
   {
     id: 2,
+    title: "Experiencia",
+    url: "#experience",
+  },
+  {
+    id: 3,
     title: "Acerca de mí",
     url: "#aboutme",
   },
   {
-    id: 3,
+    id: 4,
     title: "Proyectos",
     url: "#projects",
   },
   {
-    id: 4,
+    id: 5,
     title: "Contacto",
     url: "#contactme",
   },

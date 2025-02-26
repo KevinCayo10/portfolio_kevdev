@@ -5,7 +5,7 @@ import { Experiences } from "../data/info";
 
 function Experience() {
   return (
-    <section className="container m-auto">
+    <section id="experience" className="container m-auto">
       <div className="relative container m-auto px-4 py-12  text-center dark:text-white ">
         <motion.div
           initial={{ opacity: 0, y: 0 }}
@@ -38,6 +38,20 @@ function Experience() {
                       <h3 class="mt-1 text-xl font-semibold text-gray/80 dark:text-white">
                         {item.level} · {item.position}
                       </h3>
+                    </div>
+                    <div>
+                      <ul className="text-left mt-2 flex flex-wrap gap-3 ">
+                        {item.technology.map((tech, index) => {
+                          return (
+                            <li
+                              key={index}
+                              className="text-base font-light badge badge-outline py-1 px-3 "
+                            >
+                              {tech}
+                            </li>
+                          );
+                        })}
+                      </ul>{" "}
                     </div>
                     <p class="mt-2 mb-4 text-base font-normal text-gray/60 text-pretty">
                       <span class="text-gray-400/80">Funciones: </span>
