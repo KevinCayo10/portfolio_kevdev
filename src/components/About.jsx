@@ -18,7 +18,7 @@ function About() {
 
   return (
     <section id="aboutme">
-      <div className=" relative container m-auto px-4 py-12 max-w-4xl text-center dark:text-white ">
+      <div className=" relative container m-auto px-4 py-12  text-center dark:text-white ">
         <motion.div
           initial={{ opacity: 0, y: 0 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -62,7 +62,7 @@ function About() {
                 handleSmoothScroll(e, "contactme");
               }}
             >
-              <button className="text-sm py-3  bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full bg-gradient-hover px-5  mt-4 ">
+              <button className="btn border-none text-sm py-3  bg-gradient-to-r from-blue-500 to-cyan-500 bg-gradient-hover px-5  mt-4 ">
                 <span className="flex justify-around gap-2 items-center text-black ">
                   <FaArrowRight className="" />
                   Contáctame

@@ -20,12 +20,12 @@ function Banner() {
 
   return (
     <main
-      className="relative mt-20 flex flex-col justify-center items-center sm:h-screen sm:m-auto "
+      className="relative  flex flex-col justify-center items-center h-screen sm:m-auto mt-10"
       id="top"
     >
       {/* Intro/Banner section */}
       <section className="w-full">
-        <div className="container mx-auto text-center items-center px-4 pt-12 pb-12 sm:pt-20 flex flex-col sm:flex-row gap-6 sm:text-left sm:items-center">
+        <div className="container mx-auto text-center items-center px-4 pt-12 pb-12 sm:pt-20 flex flex-col sm:flex-row gap-6 sm:text-left   ">
           <motion.div
             className="sm:w-2/3"
             initial={{ opacity: 0, y: 25 }}
@@ -43,7 +43,7 @@ function Banner() {
               innovadoras y eficientes. Basado en una colaboración efectiva y
               una comunicación clara
             </p>
-            <div className="flex flex-row gap-5 justify-center sm:justify-start mt-5">
+            <div className="flex flex-row gap-5 justify-center sm:justify-start mt-5 ">
               {socialLinks.map((link) => {
                 return (
                   <a
@@ -61,17 +61,17 @@ function Banner() {
               })}
             </div>
 
-            <button className="text-sm py-3 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full bg-gradient-hover px-5 mt-4 ">
-              <a
-                className="flex justify-around gap-2 items-center text-black"
-                href={cv}
-                target="_blank"
-                rel="noreferrer"
-              >
-                <FaDownload className="" />
-                Descargar CV
-              </a>
-            </button>
+            {/* <button className="btn text-sm py-3 bg-gradient-to-r from-blue-500 to-cyan-500 bg-gradient-hover px-5 mt-4 "> */}
+            <a
+              className="btn border-none text-sm py-3 bg-gradient-to-r from-blue-500 to-cyan-500 bg-gradient-hover px-5 mt-4 flex items-center text-black w-2/4 lg:w-1/4  mx-auto sm:mx-0"
+              href={cv}
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FaDownload />
+              Descargar CV
+            </a>
+            {/* </button> */}
           </motion.div>
           <motion.div
             className=" w-full sm:w-1/3  profile-image"

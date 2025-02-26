@@ -1,0 +1,121 @@
+{
+  "name": "Kevin Cayo",
+  "location": "Puerto Quito, Pichincha, Ecuador",
+  "subtitle": "Ingeniero en Software",
+  "description_short": "Desarrollador Fullstack enfocado en crear soluciones web innovadoras y eficientes. Basado en una colaboración efectiva y una comunicación clara",
+  "social_networks": [
+    {
+      "title": "Linkedin",
+      "url": "#",
+      "icon": ""
+    },
+    {
+      "title": "GitHub",
+      "url": "#",
+      "icon": ""
+    },
+    {
+      "title": "Instragram",
+      "url": "#",
+      "icon": ""
+    },
+    {
+      "title": "Gmail",
+      "url": "#",
+      "icon": ""
+    }
+  ],
+  "about_me": {
+    "description_1": "Soy un apasionado desarrollador fullstack especializado en desarrollo backend y frontend. Mi enfoque está en construir y gestionar la lógica y funcionalidad detrás de sitios web y aplicaciones web, aprovechando mi experiencia para crear sistemas robustos y eficientes que impulsen el éxito general del producto.",
+    "description_2": "Además de mis habilidades técnicas, tengo un fuerte interés en dominar las prácticas de DevOps, especialmente la integración continua (CI) y la entrega continua (CD). Disfruto de los desafíos y me dedico a automatizar procesos y mejorar la eficiencia a lo largo del ciclo de vida del desarrollo de software.",
+    "skills": {
+      "lenguague": [
+        {
+          "title": "Java",
+          "icon": "",
+          "progress": 75
+        },
+        {
+          "title": "Javascript",
+          "icon": "",
+          "progress": 75
+        },
+        {
+          "title": "Python",
+          "icon": "",
+          "progress": 75
+        }
+      ],
+      "technology": [
+        {
+          "title": "Angular",
+          "icon": "",
+          "progress": 75
+        },
+        {
+          "title": "React.js",
+          "icon": "",
+          "progress": 60
+        },
+        {
+          "title": "Node.js",
+          "icon": "",
+          "progress": 60
+        },
+        {
+          "title": "Express.js",
+          "icon": "",
+          "progress": 60
+        },
+        {
+          "title": "Spring Framework",
+          "icon": "",
+          "progress": 60
+        },
+        {
+          "title": "Oracle",
+          "icon": "",
+          "progress": 60
+        },
+        {
+          "title": "Selenium",
+          "icon": "",
+          "progress": 60
+        },
+        {
+          "title": "Scrapy",
+          "icon": "",
+          "progress": 60
+        }
+      ]
+    }
+  },
+  "experience": [
+    {
+      "position": "",
+      "description": "",
+      "icon": "",
+      "start_date": "",
+      "end_date": "",
+      "technology": [{}]
+    }
+  ],
+  "project": [
+    {
+      "title": "",
+      "description_1": "",
+      "description_2": "",
+      "url": "",
+      "github": "",
+      "position": "",
+      "img": [],
+      "technology": {}
+    }
+  ],
+  "certificates": [
+    {
+      "title": "",
+      "img": ""
+    }
+  ]
+}
