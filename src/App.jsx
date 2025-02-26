@@ -8,6 +8,7 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import About from "./components/About";
 import ParticleBg from "./components/Particle";
+import Experience from "./components/Experience";
 
 function App() {
   const [scrolling, setScrolling] = useState(false);
@@ -28,20 +29,21 @@ function App() {
   }, []);
 
   return (
-    <div className="max-w-4xl m-auto relative">
+    <div className=" m-auto relative">
       <div className="absolute inset-0 z-0 ">
         <ParticleBg />
       </div>
       <Header />
       <Main />
+      <Experience />
       <About />
       <Project />
       <Contact />
       <Footer />
-      <div id="scrollToTopContainer" className="fixed bottom-8 right-8">
+      <div id="scrollToTopContainer" className="fixed bottom-14 right-8 ">
         {scrolling && (
           <button
-            className="w-24 p-2 rounded-full shadow-lg"
+            className="w-20 rounded-full shadow-lg "
             onClick={(e) => {
               e.preventDefault();
               document.getElementById("top").scrollIntoView({

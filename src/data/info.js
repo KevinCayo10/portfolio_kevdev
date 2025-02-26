@@ -5,6 +5,56 @@ import project4 from "../assets/images/PCG_web.gif";
 import project5 from "../assets/images/portfolio.png";
 
 import { FiGithub, FiLinkedin, FiInstagram, FiMail } from "react-icons/fi";
+
+export const AboutMe = {
+  title_primary: "",
+  title_secondary: "",
+  about_me: ["description 1", "description 2"],
+};
+
+export const Experiences = [
+  {
+    id: 1,
+    date: "Agosto 2024 - Febrero 2025",
+    location: "Ambato, Ecuador",
+    company: "Empresa Eléctrica Ambato - EEASA",
+    level: "Junior",
+    position: "Ingeniero en Software",
+    functions:
+      "Desarrollo de la aplicación de seguimiento para el departamento de Auditoría Interna, optimizando la gestión y monitoreode recomendaciones. Con 5 módulos y 5 roles (Auditor Operativo, Auditor Jefe, Administrador, Responsable y Director)",
+    technology: ["Angular", "Spring boot", "Oracle"],
+  },
+  {
+    id: 2,
+    date: "Marzo 2024 - Mayo 2024",
+    location: "Ambato, Ecuador",
+    company: "Empresarial Díaz & Bonilla S.A.",
+    level: "Trainer",
+    position: "Desarrollador de software",
+    functions:
+      "desarrollo de diversos sistemas para modernizar y mejorar los servicios de la empresa, con el objetivo de ofrecer unaexperiencia de alto valor a los clientes y cumplir con su misión.",
+    technology: ["Codeigneither", "Python", "Selenium WebDriver"],
+  },
+  {
+    id: 3,
+    date: "Junio 2023 - Noviembre 2023",
+    location: "Ambato, Ecuador",
+    company: "SpringCore",
+    level: "Junior",
+    position: "Desarrollador Fullstack",
+    functions:
+      "Participé en el desarrollo de una aplicación móvil para localizar médicos cercanos, con el objetivo de facilitar el acceso a atenciónmédica y mejorar la calidad de vida de los usuarios.",
+    technology: [
+      "React Native",
+      "Node.js",
+      "Express.js",
+      "Socket.io",
+      "Google Map API",
+      "Firebase",
+    ],
+  },
+];
+
 export const Projects = [
   {
     id: 1,
@@ -64,11 +114,6 @@ export const Projects = [
 ];
 
 export const socialLinks = [
-  // {
-  //   id: 1,
-  //   icon: FiGlobe,
-  //   url: "https://www.stoman.me/",
-  // },
   {
     id: 1,
     icon: FiLinkedin,
