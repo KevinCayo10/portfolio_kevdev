@@ -3,6 +3,7 @@ import project1 from "../assets/images/Vitmap.png";
 import project2 from "../assets/images/certyget.gif";
 import project4 from "../assets/images/PCG_web.gif";
 import project5 from "../assets/images/portfolio.png";
+import project6 from "../assets/images/tuLaptop.png";
 
 import { FiGithub, FiLinkedin, FiInstagram, FiMail } from "react-icons/fi";
 
@@ -109,6 +110,18 @@ export const Projects = [
     url_page: "https://portfolio-kevdev.vercel.app/",
     url_github: "https://github.com/KevinCayo10/portfolio_kevdev",
     tools: ["Reactjs", "Tailwindcss", "Framer Motion"],
+  },
+  {
+    id: 6,
+    title: "tuLaptop ",
+    description:
+      "Sistema de recomendación para productos tecnológicos utilizando web scraping",
+    position: "Desarrollador Fullstack",
+
+    url_img: project6,
+    url_page: "utatec.pro",
+    url_github: "https://github.com/KevinCayo10/UtaLapRec",
+    tools: ["Reactjs", "Tailwindcss", "DaisyUI", "Flask", "Selenium", "Scrapy"],
   },
 ];
 

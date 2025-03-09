@@ -92,7 +92,7 @@ function Banner() {
         href="#experience"
         className=" transform "
         onClick={(e) => {
-          handleSmoothScroll(e, "aboutme");
+          handleSmoothScroll(e, "experience");
         }}
       >
         <FaMouse className="text-gray-400 text-3xl animate-bounce" />
