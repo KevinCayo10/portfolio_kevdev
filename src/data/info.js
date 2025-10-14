@@ -16,6 +16,17 @@ export const AboutMe = {
 export const Experiences = [
   {
     id: 1,
+    date: "Marzo 2025 - Julio 2025",
+    location: "Santo Domingo, Ecuador",
+    company: "Ingenieria y Aplicaciones SystemWorks S.A.",
+    level: "Junior",
+    position: "Desarrollador de software",
+    functions:
+      "Implementación de tareas de desarrollo del sistema contable 'Contamatic 3', con el objetivo de mejorar y optimizar las funcionalidades existentes, así como desarrollar nuevas características que satisfagan las necesidades del cliente.",
+    technology: ["React", "Node.js", "Express.js", "MySQL"],
+  },
+  {
+    id: 2,
     date: "Agosto 2024 - Febrero 2025",
     location: "Ambato, Ecuador",
     company: "Empresa Eléctrica Ambato - EEASA",
@@ -26,7 +37,7 @@ export const Experiences = [
     technology: ["Angular", "Spring boot", "Oracle"],
   },
   {
-    id: 2,
+    id: 3,
     date: "Marzo 2024 - Mayo 2024",
     location: "Ambato, Ecuador",
     company: "Empresarial Díaz & Bonilla S.A.",
@@ -37,7 +48,7 @@ export const Experiences = [
     technology: ["CodeIgniter", "Python", "Selenium WebDriver"],
   },
   {
-    id: 3,
+    id: 4,
     date: "Junio 2023 - Noviembre 2023",
     location: "Ambato, Ecuador",
     company: "SpringCore",
@@ -171,6 +182,11 @@ export const Menu = [
   },
   {
     id: 5,
+    title: "Servicios",
+    url: "#services",
+  },
+  {
+    id: 6,
     title: "Contacto",
     url: "#contactme",
   },
