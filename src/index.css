@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  background-color: #0f0f0f;
+  color: white;
+  font-family: "Inter", sans-serif;
+}
+
+/* Para que el fondo no tape el contenido */
+.blur-3xl {
+  filter: blur(100px);
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}

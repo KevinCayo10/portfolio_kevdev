@@ -7,40 +7,13 @@ body {
   -webkit-background-clip: text;
   @apply bg-gradient-to-t from-blue-500 to-cyan-500 text-transparent;
   overflow: hidden;
-  border-right: 2px solid #fff;
   animation: typing-text-large steps(40) 5s infinite, blink ease 0.5s infinite;
   text-wrap: nowrap;
   display: inline-block;
   width: max-content;
-  width: 0;
 }
 
-/* Definición de la animación typing-text para pantallas grandes */
-@keyframes typing-text-large {
-  from {
-    width: 0%;
-  }
-  to {
-    width: 390px;
-  }
-}
 
-/* Definición de la animación typing-text para pantallas pequeñas */
-@keyframes typing-text-small {
-  from {
-    width: 0%;
-  }
-  to {
-    width: 280px;
-  }
-}
-
-/* Media query para pantallas de menos de 600px (celulares) */
-@media only screen and (max-width: 600px) {
-  .gradiant-text {
-    animation: typing-text-small steps(40) 5s infinite, blink ease 0.5s infinite;
-  }
-}
 
 .leading-loose {
   line-height: 2;
