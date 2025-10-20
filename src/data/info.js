@@ -193,44 +193,193 @@ export const Menu = [
 ];
 
 export const skills = [
+  // Lenguajes de Programación
   {
     id: 1,
-    name: "Reactjs",
+    name: "Javascript",
+    type: "lenguajes",
   },
   {
     id: 2,
-    name: "Angular",
+    name: "Typescript",
+    type: "lenguajes",
   },
   {
     id: 3,
-    name: "Nodejs",
+    name: "Python",
+    type: "lenguajes",
   },
   {
     id: 4,
-    name: "Express",
+    name: "Java",
+    type: "lenguajes",
   },
+  // Backend
   {
     id: 5,
-    name: "Socket.IO",
+    name: "Node.js",
+    type: "backend",
   },
   {
     id: 6,
-    name: "SQL",
+    name: "Express.js",
+    type: "backend",
   },
   {
     id: 7,
-    name: "Python",
+    name: "FastAPI",
+    type: "backend",
   },
   {
     id: 8,
-    name: "Selenium WebDriver",
+    name: "SpringBoot",
+    type: "backend",
   },
   {
     id: 9,
-    name: "Git",
+    name: "Socket.IO",
+    type: "backend",
   },
+  // Frontend
   {
     id: 10,
-    name: "GCloud",
+    name: "HTML",
+    type: "frontend",
+  },
+  {
+    id: 11,
+    name: "CSS",
+    type: "frontend",
+  },
+  {
+    id: 12,
+    name: "React.js",
+    type: "frontend",
+  },
+  {
+    id: 13,
+    name: "Angular",
+    type: "frontend",
+  },
+  // Base de Datos
+  {
+    id: 14,
+    name: "MySQL",
+    type: "database",
+  },
+  {
+    id: 15,
+    name: "PostgreSQL",
+    type: "database",
+  },
+  {
+    id: 16,
+    name: "MongoDB",
+    type: "database",
+  },
+  {
+    id: 17,
+    name: "Firebase",
+    type: "database",
+  },
+  // QA & CI/CD
+  {
+    id: 18,
+    name: "PyTest",
+    type: "qa-cicd",
+  },
+  {
+    id: 19,
+    name: "SonarQube",
+    type: "qa-cicd",
+  },
+  {
+    id: 20,
+    name: "Postman",
+    type: "qa-cicd",
+  },
+  {
+    id: 21,
+    name: "Swagger",
+    type: "qa-cicd",
+  },
+  {
+    id: 22,
+    name: "Git",
+    type: "qa-cicd",
+  },
+  {
+    id: 23,
+    name: "GitHub",
+    type: "qa-cicd",
+  },
+  {
+    id: 24,
+    name: "Docker",
+    type: "qa-cicd",
+  },
+  // IA & Automatización
+  {
+    id: 25,
+    name: "Azure Foundry",
+    type: "ia-automation",
+  },
+  {
+    id: 26,
+    name: "Azure AI Document Intelligence",
+    type: "ia-automation",
+  },
+  {
+    id: 27,
+    name: "LangGraph",
+    type: "ia-automation",
+  },
+  {
+    id: 28,
+    name: "Scrapy",
+    type: "ia-automation",
+  },
+  {
+    id: 29,
+    name: "Selenium",
+    type: "ia-automation",
+  },
+  {
+    id: 30,
+    name: "Playwright",
+    type: "ia-automation",
+  },
+];
+
+export const services = [
+  {
+    id: 1,
+    title: "Desarrollo Web",
+    description:
+      "Creación de sitios web atractivos y funcionales que se adaptan a tus necesidades y objetivos.",
+  },
+  {
+    id: 2,
+    title: "Desarrollo de Aplicaciones Móviles",
+    description:
+      "Diseño y desarrollo de aplicaciones móviles intuitivas y eficientes para iOS y Android.",
+  },
+  {
+    id: 3,
+    title: "Consultoría Tecnológica",
+    description:
+      "Asesoramiento experto para optimizar tus procesos tecnológicos y mejorar la eficiencia de tu negocio.",
+  },
+  {
+    id: 4,
+    title: "Mantenimiento y Soporte",
+    description:
+      "Servicios de mantenimiento y soporte continuo para garantizar el rendimiento óptimo de tus sistemas y aplicaciones.",
+  },
+  {
+    id: 5,
+    title: "Integración de Sistemas",
+    description:
+      "Conexión e integración de diferentes sistemas y plataformas para mejorar la interoperabilidad y eficiencia.",
   },
 ];

@@ -14,7 +14,7 @@ function Card({
 }) {
   return (
     <motion.div
-      className="group relative bg-base-100 dark:bg-base-300 rounded-2xl overflow-hidden border border-base-300 dark:border-base-300/30 shadow-lg hover:shadow-2xl transition-all duration-500 flex-1 flex flex-col"
+      className="group relative bg-white dark:bg-base-300 rounded-2xl overflow-hidden border border-gray-200 dark:border-base-400 shadow-lg hover:shadow-2xl transition-all duration-500 flex-1 flex flex-col"
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       whileHover={{ y: -8 }}
@@ -33,12 +33,12 @@ function Card({
           className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
           whileHover={{ scale: 1.05 }}
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-base-100/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+        <div className="absolute inset-0 bg-gradient-to-t from-white/80 dark:from-base-300/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
         
         {/* Position Badge */}
         {position && (
           <div className="absolute top-4 left-4">
-            <span className="inline-flex items-center gap-1 px-3 py-1 bg-primary/90 text-white text-xs font-medium rounded-full backdrop-blur-sm">
+            <span className="inline-flex items-center gap-1 px-3 py-1 bg-base-200 dark:bg-base-400 text-white text-xs font-medium rounded-full backdrop-blur-sm">
               <FaUserTie className="text-xs" />
               {position}
             </span>
@@ -51,13 +51,13 @@ function Card({
             {tools.slice(0, 3).map((tool, index) => (
               <span
                 key={index}
-                className="px-2 py-1 bg-base-100/90 dark:bg-base-300/90 text-gray-700 dark:text-gray-300 text-xs font-medium rounded-md backdrop-blur-sm border border-base-300"
+                className="px-2 py-1 bg-base-400 dark:bg-base-200 text-gray-700 dark:text-gray-300 text-xs font-medium rounded-md backdrop-blur-sm border border-gray-300 dark:border-base-500"
               >
                 {tool}
               </span>
             ))}
             {tools.length > 3 && (
-              <span className="px-2 py-1 bg-base-100/90 dark:bg-base-300/90 text-gray-500 dark:text-gray-400 text-xs font-medium rounded-md backdrop-blur-sm border border-base-300">
+              <span className="px-2 py-1 bg-base-400 dark:bg-base-200 text-gray-500 dark:text-gray-400 text-xs font-medium rounded-md backdrop-blur-sm border border-gray-300 dark:border-base-500">
                 +{tools.length - 3}
               </span>
             )}
@@ -87,7 +87,7 @@ function Card({
             {tools.map((tool, index) => (
               <motion.span
                 key={index}
-                className="px-3 py-1 bg-base-200 dark:bg-base-400 text-gray-700 dark:text-gray-300 text-sm rounded-lg border border-base-300 dark:border-base-500 hover:bg-primary hover:text-white hover:border-primary transition-all duration-300 cursor-default"
+                className="px-3 py-1 bg-gray-400 dark:bg-base-200 text-gray-700 dark:text-gray-300 text-sm rounded-lg border border-gray-300 dark:border-base-500 hover:bg-primary hover:text-white hover:border-primary transition-all duration-300 cursor-default"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
@@ -98,7 +98,7 @@ function Card({
         </div>
 
         {/* Action Buttons */}
-        <div className="flex gap-3 mt-auto pt-4 border-t border-base-300 dark:border-base-300/30">
+        <div className="flex gap-3 mt-auto pt-4 border-t border-gray-200 dark:border-base-400">
           {url_page && url_page !== "" && (
             <motion.div 
               className="flex-1"
@@ -134,14 +134,13 @@ function Card({
   );
 }
 
-// Enhanced ButtonG component (if you can modify it)
-// If you can't modify ButtonG, here's a temporary inline solution:
+// Enhanced ButtonG component para mejor consistencia
 function EnhancedButton({ version, url, label, iconName }) {
   const baseClasses = "w-full flex items-center justify-center gap-2 px-4 py-3 rounded-xl text-sm font-medium transition-all duration-300";
   
   const versions = {
     live: `${baseClasses} bg-gradient-to-r from-primary to-secondary text-white hover:shadow-lg hover:scale-105`,
-    code: `${baseClasses} bg-base-200 dark:bg-base-400 text-gray-700 dark:text-gray-300 hover:bg-base-300 dark:hover:bg-base-500 hover:shadow-md`
+    code: `${baseClasses} bg-gray-100 dark:bg-base-400 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-base-500 hover:shadow-md`
   };
 
   return (

@@ -1,11 +1,10 @@
-import React from "react";
 import illustrator from "../assets/images/software-illustrator.webp";
 import { motion } from "framer-motion";
 import { Experiences } from "../data/info";
 
 function Experience() {
   return (
-    <section id="experience" className="min-h-screen py-20 bg-base-100">
+    <section id="experience" className="min-h-screen py-20 bg-[#fafafa] dark:bg-base-100">
       <div className="container mx-auto px-4 lg:px-8">
         {/* Header Section */}
         <motion.div
@@ -67,7 +66,7 @@ function Experience() {
                       <div className="absolute left-6 -translate-x-1/2 w-4 h-4 rounded-full bg-primary border-4 border-base-100 shadow-lg group-hover:scale-125 transition-transform duration-300 z-10"></div>
                       
                       {/* Content Card */}
-                      <div className="bg-base-200/50 dark:bg-base-300/30 backdrop-blur-sm rounded-2xl p-6 border border-base-300 dark:border-base-300/30 shadow-sm hover:shadow-lg transition-all duration-300 group-hover:border-primary/30">
+                      <div className=" bg-[#fafafa] dark:bg-base-200 backdrop-blur-sm rounded-2xl p-6 border border-base-400 dark:border-base-300/30 shadow-sm hover:shadow-lg transition-all duration-300 group-hover:border-primary/30">
                         
                         {/* Header */}
                         <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-2 mb-4">
@@ -99,7 +98,7 @@ function Experience() {
                             {item.technology.map((tech, techIndex) => (
                               <span
                                 key={techIndex}
-                                className="px-3 py-1 text-xs font-medium bg-base-300 dark:bg-base-200 text-gray-700 dark:text-gray-300 rounded-full border border-base-300 dark:border-base-400"
+                                className="px-3 py-1 text-xs font-medium bg-base-400 dark:bg-base-200 text-gray-700 dark:text-gray-300 rounded-full border border-base-300 dark:border-base-400"
                               >
                                 {tech}
                               </span>

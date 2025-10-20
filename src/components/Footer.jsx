@@ -1,12 +1,19 @@
 import { motion } from "framer-motion";
 import { socialLinks } from "../data/info";
-import { FaHeart, FaCode, FaRegCopyright } from "react-icons/fa";
+import { FaHeart, FaCode, FaRegCopyright, FaArrowUp } from "react-icons/fa";
 
 function Footer() {
   const currentYear = new Date().getFullYear();
 
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  };
+
   return (
-    <footer className="relative bg-base-200 dark:bg-base-300 border-t border-base-300 dark:border-base-300/30">
+    <footer className="relative bg-gray-50 dark:bg-base-300 border-t border-gray-200 dark:border-base-400">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-secondary/20"></div>
@@ -48,7 +55,7 @@ function Footer() {
                 Kevin Cayo
               </span>
               <motion.p
-                className="text-gray-600 dark:text-gray-400 text-sm flex items-center gap-1 mt-1"
+                className="text-gray-700 dark:text-gray-400 text-sm flex items-center gap-1 mt-1"
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 transition={{ delay: 0.3 }}
@@ -66,7 +73,7 @@ function Footer() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <span className="text-sm text-gray-600 dark:text-gray-400 mr-2 hidden sm:block">
+            <span className="text-sm text-gray-700 dark:text-gray-400 mr-2 hidden sm:block">
               Sígueme en:
             </span>
             <div className="flex gap-3">
@@ -76,7 +83,7 @@ function Footer() {
                   href={link.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-3 bg-base-100 dark:bg-base-200 text-gray-600 dark:text-gray-400 rounded-xl hover:bg-primary hover:text-white transition-all duration-300 shadow-sm hover:shadow-lg"
+                  className="p-3 bg-white dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-xl  text-gray-700 dark:hover:text-white transition-all duration-300 shadow-sm hover:shadow-lg border border-gray-400 dark:border-gray-700"
                   whileHover={{
                     scale: 1.1,
                     y: -2,
@@ -100,7 +107,7 @@ function Footer() {
           </motion.nav>
         </div>
 
-        {/* Back to Top Button */}
+  
       </div>
     </footer>
   );

@@ -34,10 +34,10 @@ function Contact() {
   };
 
   return (
-    <section id="contactme" className="min-h-screen py-20 bg-base-100 relative overflow-hidden">
+    <section id="contactme" className="min-h-screen py-20 bg-[#fafafa] dark:bg-base-200 relative overflow-hidden">
       {/* Background Elements */}
-      <div className="absolute top-0 left-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2"></div>
-      <div className="absolute bottom-0 right-0 w-96 h-96 bg-secondary/5 rounded-full blur-3xl translate-x-1/2 translate-y-1/2"></div>
+      <div className="absolute top-0 left-0 w-96 h-96 bg-primary/10 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2"></div>
+      <div className="absolute bottom-0 right-0 w-96 h-96 bg-secondary/10 rounded-full blur-3xl translate-x-1/2 translate-y-1/2"></div>
       
       <div className="container mx-auto px-4 lg:px-8 relative z-10">
         <Toaster 
@@ -46,9 +46,9 @@ function Contact() {
           toastOptions={{
             duration: 4000,
             style: {
-              background: 'oklch(var(--b1))',
-              color: 'oklch(var(--bc))',
-              border: '1px solid oklch(var(--b3))',
+              background: '#fff',
+              color: '#1f2937',
+              border: '1px solid #e5e7eb',
             },
           }}
         />
@@ -69,7 +69,7 @@ function Contact() {
             </h2>
           </div>
           <motion.p
-            className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto leading-relaxed"
+            className="text-lg text-gray-700 dark:text-gray-300 max-w-2xl mx-auto leading-relaxed"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
@@ -87,54 +87,54 @@ function Contact() {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <div className="bg-base-200/50 dark:bg-base-300/30 backdrop-blur-sm rounded-2xl p-8 border border-base-300 dark:border-base-300/30 shadow-sm">
+            <div className="bg-white dark:bg-base-300 rounded-2xl p-8 border border-gray-200 dark:border-base-200 shadow-sm hover:shadow-lg transition-all duration-300">
               <h3 className="text-2xl font-bold text-gray-800 dark:text-white mb-6">
                 Información de Contacto
               </h3>
               
               <div className="space-y-6">
                 <motion.div 
-                  className="flex items-center gap-4 p-4 bg-base-100 dark:bg-base-200 rounded-xl hover:shadow-md transition-all duration-300"
+                  className="flex items-center gap-4 p-4 bg-gray-50 dark:bg-base-200 rounded-xl hover:shadow-md transition-all duration-300"
                   whileHover={{ x: 5 }}
                 >
                   <div className="p-3 bg-primary/10 rounded-lg">
                     <FaEnvelope className="text-primary text-xl" />
                   </div>
                   <div>
-                    <p className="text-sm text-gray-500 dark:text-gray-400">Email</p>
+                    <p className="text-sm text-gray-600 dark:text-gray-400">Email</p>
                     <p className="text-gray-800 dark:text-white font-medium">kejoelct1002@gmail.com</p>
                   </div>
                 </motion.div>
 
                 <motion.div 
-                  className="flex items-center gap-4 p-4 bg-base-100 dark:bg-base-200 rounded-xl hover:shadow-md transition-all duration-300"
+                  className="flex items-center gap-4 p-4  bg-gray-50 dark:bg-base-200 rounded-xl hover:shadow-md transition-all duration-300"
                   whileHover={{ x: 5 }}
                 >
                   <div className="p-3 bg-secondary/10 rounded-lg">
                     <FaPhone className="text-secondary text-xl" />
                   </div>
                   <div>
-                    <p className="text-sm text-gray-500 dark:text-gray-400">Teléfono</p>
+                    <p className="text-sm text-gray-600 dark:text-gray-400">Teléfono</p>
                     <p className="text-gray-800 dark:text-white font-medium">+593 99 397 2854</p>
                   </div>
                 </motion.div>
 
                 <motion.div 
-                  className="flex items-center gap-4 p-4 bg-base-100 dark:bg-base-200 rounded-xl hover:shadow-md transition-all duration-300"
+                  className="flex items-center gap-4 p-4 bg-gray-50 dark:bg-base-200 rounded-xl hover:shadow-md transition-all duration-300"
                   whileHover={{ x: 5 }}
                 >
                   <div className="p-3 bg-accent/10 rounded-lg">
                     <FaMapMarkerAlt className="text-accent text-xl" />
                   </div>
                   <div>
-                    <p className="text-sm text-gray-500 dark:text-gray-400">Ubicación</p>
+                    <p className="text-sm text-gray-600 dark:text-gray-400">Ubicación</p>
                     <p className="text-gray-800 dark:text-white font-medium">Puerto Quito, Ecuador</p>
                   </div>
                 </motion.div>
               </div>
 
-              <div className="mt-8 p-4 bg-primary/5 rounded-xl border border-primary/20">
-                <p className="text-sm text-gray-600 dark:text-gray-400 text-center">
+              <div className="mt-8 p-4 bg-primary/10 rounded-xl border border-primary/20">
+                <p className="text-sm text-gray-700 dark:text-gray-300 text-center">
                   ⚡ Respuesta rápida garantizada en menos de 24 horas
                 </p>
               </div>
@@ -148,7 +148,7 @@ function Contact() {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <div className="bg-base-200/50 dark:bg-base-300/30 backdrop-blur-sm rounded-2xl p-8 border border-base-300 dark:border-base-300/30 shadow-sm">
+            <div className="bg-white dark:bg-base-300 rounded-2xl p-8 border border-gray-200 dark:border-base-200 shadow-sm hover:shadow-lg transition-all duration-300">
               <form
                 ref={form}
                 onSubmit={sendEmail}
@@ -193,7 +193,7 @@ function Contact() {
                     Mensaje *
                   </label>
                   <motion.textarea
-                    className="textarea textarea-bordered w-full h-32 px-4 py-3 text-gray-800 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 bg-base-100 dark:bg-base-200 border-base-300 resize-none focus:border-primary transition-colors duration-300"
+                    className="textarea textarea-bordered w-full h-32 px-4 py-3 text-gray-800 dark:text-white placeholder-gray-500 dark:placeholder-gray-200 bg-white dark:bg-base-200 border-gray-300 dark:border-base-200 resize-none focus:border-primary transition-colors duration-300"
                     name="message"
                     id="message"
                     placeholder="Cuéntame sobre tu proyecto o consulta..."

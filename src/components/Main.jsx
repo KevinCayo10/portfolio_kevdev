@@ -20,7 +20,7 @@ function Banner() {
 
   return (
     <main
-      className="relative min-h-screen flex flex-col justify-center items-center bg-base-100 overflow-hidden"
+      className="relative min-h-screen flex flex-col justify-center items-center bg-[#fafafa] dark:bg-base-100 overflow-hidden"
       id="top"
     >
       {/* Background Elements */}
@@ -65,7 +65,7 @@ function Banner() {
 
             {/* Description */}
             <motion.p
-              className="text-lg lg:text-xl text-gray-600 dark:text-gray-300 mb-8 leading-relaxed max-w-2xl"
+              className="text-lg lg:text-xl text-gray-700 dark:text-gray-300 mb-8 leading-relaxed max-w-2xl"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.8 }}
@@ -88,7 +88,7 @@ function Banner() {
                   href={link.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-3 bg-base-200 dark:bg-base-300 text-gray-600 dark:text-gray-400 rounded-xl hover:bg-primary hover:text-white transition-all duration-300 hover:shadow-lg hover:scale-110"
+                  className="p-3 bg-white dark:bg-base-300 text-gray-700 dark:text-gray-400 rounded-xl hover:bg-primary hover:text-white transition-all duration-300 hover:shadow-lg hover:scale-110 border border-gray-200 dark:border-base-200"
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.95 }}
                 >
@@ -116,7 +116,7 @@ function Banner() {
               
               <button
                 onClick={(e) => handleSmoothScroll(e, "contactme")}
-                className="btn btn-outline border-primary text-primary hover:bg-primary hover:border-primary hover:text-white px-8 py-3 rounded-xl transition-all duration-300 group"
+                className="btn btn-outline border-gray-700 dark:border-primary text-gray-700 dark:text-primary hover:bg-primary dark:hover:bg-primary hover:border-gray-400 dark:hover:border-primary hover:text-white px-8 py-3 rounded-xl transition-all duration-300 group"
               >
                 <span className="flex items-center gap-2">
                   Contáctame
@@ -138,7 +138,7 @@ function Banner() {
               <div className="absolute -inset-4 bg-gradient-to-r from-primary/20 to-secondary/20 rounded-3xl blur-lg"></div>
               
               {/* Profile Image Container */}
-              <div className="relative  dark:bg-base-300 rounded-2xl shadow-2xl">
+              <div className="relative bg-white dark:bg-base-300 rounded-2xl p-2 shadow-2xl">
                 <motion.img
                   src={Portfile}
                   alt="Kevin Cayo - Ingeniero en Software"
@@ -189,7 +189,7 @@ function Banner() {
         <motion.a
           href="#experience"
           onClick={(e) => handleSmoothScroll(e, "experience")}
-          className="flex flex-col items-center text-gray-400 hover:text-primary transition-colors duration-300 group"
+          className="flex flex-col items-center text-gray-600 dark:text-gray-400 hover:text-primary transition-colors duration-300 group"
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
         >

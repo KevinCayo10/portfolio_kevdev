@@ -20,7 +20,7 @@ function FormInput({
         {inputLabel} {required && <span className="text-primary">*</span>}
       </label>
       <motion.input
-        className="input input-bordered w-full px-4 py-3 text-gray-800 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 bg-base-100 dark:bg-base-200 border-base-300 focus:border-primary transition-all duration-300 focus:ring-2 focus:ring-primary/20"
+        className="input input-bordered w-full px-4 py-3 text-gray-800 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 bg-white dark:bg-base-200 border-gray-300 dark:border-base-200 focus:border-primary transition-all duration-300 focus:ring-2 focus:ring-primary/20"
         type={inputType}
         id={inputId}
         name={inputName}
