@@ -16,6 +16,28 @@ export const AboutMe = {
 export const Experiences = [
   {
     id: 1,
+    date: "Julio 2025 - Diciembre 2025",
+    location: "Remoto, Colombia",
+    company: "AKENPAY S.A.S.",
+    level: "Tiempo Completo",
+    position: "Ingeniero de software",
+    functions:
+      "Desarrollo de un módulo de validación documental basado en IA mediante un servidor MCP. Participación en múltiples proyectos de inteligencia artificial enfocados en documentación técnica, testing y aseguramiento de calidad.",
+    technology: ["FastAPI", "FastAPI-MCP", "LangGraph", "Azure", "Pytest", "SonarQube"],
+  },
+  {
+    id: 2,
+    date: "Septiembre 2025 - Diciembre 2025",
+    location: "Remoto, Ecuador",
+    company: "Sprintcore S.A.S.",
+    level: "Freelance",
+    position: "Ingeniero de software",
+    functions:
+      "Desarrollo de servicios backend para un sistema médico, implementando módulos de historias clínicas, recetas y autenticación, bajo un enfoque de arquitectura hexagonal y consultas optimizadas para reportes clínicos. \nDesarrollo backend de la aplicación, implementando gestión de publicaciones, órdenes, pagos (Nuvei – Link to Pay) y sistema de tickets digitales con QR para control de acceso a eventos.",
+    technology: ["Typescript","React", "Node.js", "Express.js", "MySQL", "Supabase", "PostgreSQL"],
+  },
+  {
+    id: 3,
     date: "Marzo 2025 - Julio 2025",
     location: "Santo Domingo, Ecuador",
     company: "Ingenieria y Aplicaciones SystemWorks S.A.",
@@ -26,7 +48,7 @@ export const Experiences = [
     technology: ["React", "Node.js", "Express.js", "MySQL"],
   },
   {
-    id: 2,
+    id: 4,
     date: "Agosto 2024 - Febrero 2025",
     location: "Ambato, Ecuador",
     company: "Empresa Eléctrica Ambato - EEASA",
@@ -37,7 +59,7 @@ export const Experiences = [
     technology: ["Angular", "Spring boot", "Oracle"],
   },
   {
-    id: 3,
+    id: 5,
     date: "Marzo 2024 - Mayo 2024",
     location: "Ambato, Ecuador",
     company: "Empresarial Díaz & Bonilla S.A.",
@@ -48,10 +70,10 @@ export const Experiences = [
     technology: ["CodeIgniter", "Python", "Selenium WebDriver"],
   },
   {
-    id: 4,
+    id: 6,
     date: "Junio 2023 - Noviembre 2023",
     location: "Ambato, Ecuador",
-    company: "SpringCore",
+    company: "SpringCore S.A.S.",
     level: "Junior",
     position: "Desarrollador Fullstack",
     functions:

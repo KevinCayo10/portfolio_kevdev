@@ -132,41 +132,43 @@ function About() {
       initial={{ opacity: 0, scale: 0.9 }}
       animate={{ opacity: 1, scale: 1 }}
       exit={{ opacity: 0, scale: 0.9 }}
-      className="modal-box max-w-2xl w-full max-h-[80vh] overflow-hidden p-0"
+      className="modal-box max-w-2xl w-full max-h-[80vh] overflow-hidden p-0 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 shadow-xl"
     >
       {/* Modal Header */}
       <div
-        className={`p-6 border-b ${selectedCategory.borderColor} bg-gradient-to-r ${selectedCategory.color} bg-opacity-5`}
+        className={`p-6 border-b ${selectedCategory.borderColor} bg-gradient-to-r ${selectedCategory.color} bg-opacity-15 dark:bg-opacity-25`}
       >
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <div className={`p-2 ${selectedCategory.bgColor} rounded-lg`}>
+            <div
+              className={`p-2 ${selectedCategory.bgColor} rounded-lg bg-opacity-25 dark:bg-opacity-35`}
+            >
               <selectedCategory.icon
                 className={`text-2xl bg-gradient-to-r ${selectedCategory.color} bg-clip-text text-transparent`}
               />
             </div>
             <div>
-              <h3 className="text-xl font-bold text-base-content">
+              <h3 className="text-xl font-bold text-gray-900 dark:text-white">
                 {selectedCategory.title}
               </h3>
-              <p className="text-sm text-base-content/80">
+              <p className="text-sm text-gray-700 dark:text-gray-300">
                 {selectedCategory.description}
               </p>
             </div>
           </div>
           <button
             onClick={closeModal}
-            className="btn btn-ghost btn-sm btn-circle"
+            className="btn btn-ghost btn-sm btn-circle hover:bg-gray-100 dark:hover:bg-gray-800"
           >
-            <FaTimes className="text-lg" />
+            <FaTimes className="text-lg text-gray-700 dark:text-gray-300" />
           </button>
         </div>
       </div>
 
       {/* Modal Content */}
-      <div className="p-6 overflow-y-auto max-h-[50vh]">
+      <div className="p-6 overflow-y-auto max-h-[50vh] bg-white dark:bg-gray-900">
         <div className="mb-4">
-          <span className="text-sm text-base-content/70">
+          <span className="text-sm text-gray-600 dark:text-gray-400">
             {skillsByCategory[selectedCategory.key]?.length} habilidades
             encontradas
           </span>
@@ -178,9 +180,9 @@ function About() {
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: index * 0.05 }}
-              className={`p-3 rounded-lg border ${selectedCategory.borderColor} bg-base-200 dark:bg-base-300 hover:shadow-md transition-all duration-200`}
+              className={`p-3 rounded-lg border ${selectedCategory.borderColor} bg-gray-50 dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700 transition-all duration-200`}
             >
-              <span className="text-base-content font-medium text-sm">
+              <span className="text-gray-800 dark:text-gray-100 font-medium text-sm">
                 {skill.name}
               </span>
             </motion.div>
@@ -189,7 +191,7 @@ function About() {
       </div>
 
       {/* Modal Footer */}
-      <div className="modal-action p-4 border-t border-base-300 dark:border-base-400">
+      <div className="modal-action p-4 border-t border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900">
         <button onClick={closeModal} className="btn btn-primary">
           Cerrar
         </button>
@@ -204,44 +206,43 @@ function About() {
       animate={{ y: 0 }}
       exit={{ y: "100%" }}
       transition={{ type: "spring", damping: 25, stiffness: 200 }}
-      className="fixed bottom-0 left-0 right-0 z-50 bg-base-100 rounded-t-3xl border-t border-base-300 shadow-2xl max-h-[85vh]"
+      className="fixed bottom-0 left-0 right-0 z-50 bg-white dark:bg-gray-900 rounded-t-3xl border-t border-gray-300 dark:border-gray-700 shadow-2xl max-h-[85vh]"
     >
-      {/* Handle de arrastre */}
-      <div className="flex justify-center pt-3 pb-2">
-        <div className="w-12 h-1.5 bg-base-300 rounded-full"></div>
-      </div>
-
       {/* Modal Header */}
-      <div className={`px-6 py-4 border-b ${selectedCategory.borderColor}`}>
+      <div
+        className={`rounded-t-3xl border-t px-6 py-4 border-b ${selectedCategory.borderColor} bg-gradient-to-r ${selectedCategory.color} bg-opacity-15 dark:bg-opacity-25`}
+      >
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <div className={`p-2 ${selectedCategory.bgColor} rounded-lg`}>
+            <div
+              className={`p-2 ${selectedCategory.bgColor} rounded-lg bg-opacity-25 dark:bg-opacity-35`}
+            >
               <selectedCategory.icon
                 className={`text-xl bg-gradient-to-r ${selectedCategory.color} bg-clip-text text-transparent`}
               />
             </div>
             <div>
-              <h3 className="text-lg font-bold text-base-content">
+              <h3 className="text-lg font-bold text-gray-900 dark:text-white">
                 {selectedCategory.title}
               </h3>
-              <p className="text-sm text-base-content/80">
+              <p className="text-sm text-gray-700 dark:text-gray-300">
                 {selectedCategory.description}
               </p>
             </div>
           </div>
           <button
             onClick={closeModal}
-            className="btn btn-ghost btn-sm btn-circle"
+            className="btn btn-ghost btn-sm btn-circle hover:bg-gray-100 dark:hover:bg-gray-800"
           >
-            <FaTimes className="text-lg" />
+            <FaTimes className="text-lg text-gray-700 dark:text-gray-300" />
           </button>
         </div>
       </div>
 
       {/* Modal Content */}
-      <div className="p-6 overflow-y-auto max-h-[60vh]">
+      <div className="p-6 overflow-y-auto max-h-[60vh] bg-white dark:bg-gray-900">
         <div className="mb-4">
-          <span className="text-sm text-base-content/70">
+          <span className="text-sm text-gray-600 dark:text-gray-400">
             {skillsByCategory[selectedCategory.key]?.length} habilidades
             encontradas
           </span>
@@ -253,9 +254,9 @@ function About() {
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.03 }}
-              className={`p-3 rounded-lg border ${selectedCategory.borderColor} bg-base-200 hover:shadow-md transition-all duration-200`}
+              className={`p-3 rounded-lg border ${selectedCategory.borderColor} bg-gray-50 dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700 transition-all duration-200`}
             >
-              <span className="text-base-content font-medium text-sm">
+              <span className="text-gray-800 dark:text-gray-100 font-medium text-sm">
                 {skill.name}
               </span>
             </motion.div>
@@ -264,14 +265,13 @@ function About() {
       </div>
 
       {/* Modal Footer */}
-      <div className="p-4 border-t border-base-300 bg-base-200">
+      <div className="p-4 border-t border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800">
         <button onClick={closeModal} className="btn btn-primary w-full">
           Cerrar
         </button>
       </div>
     </motion.div>
   );
-
   return (
     <section
       id="aboutme"
@@ -435,40 +435,45 @@ function About() {
 
                 {/* Skills Grid por Categorías */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  {categories.map((category, index) => (
-                    <motion.button
-                      key={category.key}
-                      className={`p-4 rounded-xl border-2 ${category.borderColor} bg-base-400 dark:bg-base-100 hover:shadow-lg transition-all duration-300 group text-left`}
-                      initial={{ opacity: 0, y: 20 }}
-                      whileInView={{ opacity: 1, y: 0 }}
-                      whileHover={{ scale: 1.02, y: -2 }}
-                      whileTap={{ scale: 0.98 }}
-                      transition={{ delay: 0.1 * index }}
-                      onClick={() => openModal(category)}
-                    >
-                      <div className="flex items-center gap-3 mb-2">
-                        <div
-                          className={`p-2 ${category.bgColor} rounded-lg group-hover:scale-110 transition-transform duration-300`}
-                        >
-                          <category.icon
-                            className={`text-xl bg-gradient-to-r ${category.color} bg-clip-text text-transparent`}
-                          />
+                  {categories.map((category, index) => {
+                    const IconComponent = category.icon;
+                    return (
+                      <motion.button
+                        key={category.key}
+                        className={`p-4 rounded-xl border-2 ${category.borderColor} bg-base-400 dark:bg-base-100 hover:shadow-lg transition-all duration-300 group text-left`}
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        whileHover={{ scale: 1.02, y: -2 }}
+                        whileTap={{ scale: 0.98 }}
+                        transition={{ delay: 0.1 * index }}
+                        onClick={() => openModal(category)}
+                      >
+                        <div className="flex items-center gap-3 mb-2">
+                          <div
+                            className={`p-2 ${category.bgColor} rounded-lg group-hover:scale-110 transition-transform duration-300`}
+                          >
+                            {IconComponent && (
+                              <IconComponent
+                                className={`text-2xl text-primary`}
+                              />
+                            )}
+                          </div>
+                          <h4 className="font-semibold text-base-200 dark:text-base-content text-sm flex-1">
+                            {category.title}
+                          </h4>
                         </div>
-                        <h4 className="font-semibold text-base-200 dark:text-base-content text-sm flex-1">
-                          {category.title}
-                        </h4>
-                      </div>
-                      <p className="text-xs text-base-200/80 dark:text-base-content/60 line-clamp-2">
-                        {category.description}
-                      </p>
-                      <div className="flex justify-between items-center mt-2">
-                        <span className="text-xs text-base-200/70 dark:text-base-content/50">
-                          {skillsByCategory[category.key]?.length} habilidades
-                        </span>
-                        <FaChevronUp className="text-base-200/70 dark:text-base-content/50 group-hover:text-primary transition-colors duration-300" />
-                      </div>
-                    </motion.button>
-                  ))}
+                        <p className="text-xs text-base-200/80 dark:text-base-content/60 line-clamp-2">
+                          {category.description}
+                        </p>
+                        <div className="flex justify-between items-center mt-2">
+                          <span className="text-xs text-base-200/70 dark:text-base-content/50">
+                            {skillsByCategory[category.key]?.length} habilidades
+                          </span>
+                          <FaChevronUp className="text-base-200/70 dark:text-base-content/50 group-hover:text-primary transition-colors duration-300" />
+                        </div>
+                      </motion.button>
+                    );
+                  })}
                 </div>
               </div>
             </div>
