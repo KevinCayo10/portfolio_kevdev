@@ -31,7 +31,7 @@ export const Experiences = [
     location: "Remoto, Ecuador",
     company: "Sprintcore S.A.S.",
     level: "Freelance",
-    position: "Ingeniero de software",
+    position: "Desarrollador backend",
     functions:
       "Desarrollo de servicios backend para un sistema médico, implementando módulos de historias clínicas, recetas y autenticación, bajo un enfoque de arquitectura hexagonal y consultas optimizadas para reportes clínicos. \nDesarrollo backend de la aplicación, implementando gestión de publicaciones, órdenes, pagos (Nuvei – Link to Pay) y sistema de tickets digitales con QR para control de acceso a eventos.",
     technology: ["Typescript","React", "Node.js", "Express.js", "MySQL", "Supabase", "PostgreSQL"],
