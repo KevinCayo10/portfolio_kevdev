@@ -4,6 +4,8 @@ import project2 from "../assets/images/certyget.gif";
 import project4 from "../assets/images/PCG_web.gif";
 import project5 from "../assets/images/portfolio.png";
 import project6 from "../assets/images/tuLaptop.png";
+import cbpq from "../assets/images/cbpq.png";
+
 
 import { FiGithub, FiLinkedin, FiInstagram, FiMail } from "react-icons/fi";
 
@@ -34,7 +36,7 @@ export const Experiences = [
     position: "Desarrollador backend",
     functions:
       "Desarrollo de servicios backend para un sistema médico, implementando módulos de historias clínicas, recetas y autenticación, bajo un enfoque de arquitectura hexagonal y consultas optimizadas para reportes clínicos. \nDesarrollo backend de la aplicación, implementando gestión de publicaciones, órdenes, pagos (Nuvei – Link to Pay) y sistema de tickets digitales con QR para control de acceso a eventos.",
-    technology: ["Typescript","React", "Node.js", "Express.js", "MySQL", "Supabase", "PostgreSQL"],
+    technology: ["Typescript", "React", "Node.js", "Express.js", "MySQL", "Supabase", "PostgreSQL"],
   },
   {
     id: 3,
@@ -90,7 +92,7 @@ export const Experiences = [
 
 export const Projects = [
   {
-    id: 1,
+    id: 0,
     title: "VitMap ",
     description: "Aplicación movil para localizar doctores ",
     position: "Desarrollador backend",
@@ -98,6 +100,16 @@ export const Projects = [
     url_page: "",
     url_github: "https://github.com/MarcoOrtiz333/VitMapBackend/tree/develop",
     tools: ["React Native", "Nodejs", "Firebase"],
+  },
+  {
+    id: 1,
+    title: "CBPQ - App Móvil",
+    description: "Aplicación movil para la gestión, registro y reporte de inspecciones realizadas por el Cuerpo de Bomberos de Puerto Quito ",
+    position: "Desarrollador Fullstack",
+    url_img: cbpq,
+    url_page: "https://docs-cbpq.vercel.app/",
+    url_github: "",
+    tools: ["React Native", "Laravel", "MySQL", "Cpanel"],
   },
   {
     id: 2,
